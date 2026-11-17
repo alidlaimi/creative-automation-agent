@@ -1,0 +1,91 @@
+# Jeder Wert: wert, status, quelle, geprueft. Erklärung: SKILL.md
+kanaele:
+
+  google_ads_rsa:
+    name: Google Ads – Responsive Search Ad
+    plattform: google_ads
+    textfelder:
+      titel:
+        bezeichnung: Anzeigentitel (Headline)
+        max_zeichen: {wert: 30, status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/7684791", geprueft: 2026-11-17}
+        min_anzahl:  {wert: 3,  status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/7684791", geprueft: 2026-11-17}
+        max_anzahl:  {wert: 15, status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/7684791", geprueft: 2026-11-17}
+      beschreibung:
+        bezeichnung: Beschreibung
+        max_zeichen: {wert: 90, status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/7684791", geprueft: 2026-11-17}
+        min_anzahl:  {wert: 2,  status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/7684791", geprueft: 2026-11-17}
+        max_anzahl:  {wert: 4,  status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/7684791", geprueft: 2026-11-17}
+      pfad:
+        bezeichnung: Pfad der angezeigten URL
+        max_zeichen: {wert: 15, status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/7684791", geprueft: 2026-11-17}
+
+  meta_feed:
+    name: Meta – Facebook Feed (Bild)
+    plattform: meta
+    layout: feed
+    bild:
+      breite_px:         {wert: 1440,  status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-feed", geprueft: 2026-11-17}
+      hoehe_px:          {wert: 1800,  status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-feed", geprueft: 2026-11-17}
+      seitenverhaeltnis: {wert: "4:5", status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-feed", geprueft: 2026-11-17, hinweis: "Toleranz 3 %"}
+    textfelder:
+      primaertext:
+        bezeichnung: Primärer Text
+        min_zeichen: {wert: 50,  status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-feed", geprueft: 2026-11-17}
+        max_zeichen: {wert: 150, status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-feed", geprueft: 2026-11-17}
+      ueberschrift:
+        bezeichnung: Überschrift
+        max_zeichen: {wert: 27, status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-feed", geprueft: 2026-11-17}
+    pflichtangaben: {wert: [produktname, preis, cta], status: interne Vorgabe, quelle: "skills/kanalformate/SKILL.md", geprueft: 2026-11-17}
+
+  meta_story:
+    name: Meta – Facebook Stories (Bild)
+    plattform: meta
+    layout: story
+    bild:
+      breite_px:         {wert: 1440,   status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-story", geprueft: 2026-11-17}
+      hoehe_px:          {wert: 2560,   status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-story", geprueft: 2026-11-17}
+      seitenverhaeltnis: {wert: "9:16", status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-story", geprueft: 2026-11-17, hinweis: "Toleranz 1 %"}
+      sichere_zone:
+        oben_prozent:   {wert: 14, status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-story", geprueft: 2026-11-17}
+        unten_prozent:  {wert: 35, status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-story", geprueft: 2026-11-17}
+        links_prozent:  {wert: 6,  status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-story", geprueft: 2026-11-17}
+        rechts_prozent: {wert: 6,  status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-story", geprueft: 2026-11-17}
+    textfelder:
+      primaertext:
+        bezeichnung: Primärer Text
+        max_zeichen: {wert: 125, status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-story", geprueft: 2026-11-17}
+      ueberschrift:
+        bezeichnung: Überschrift
+        max_zeichen: {wert: 40, status: Empfehlung, quelle: "https://www.facebook.com/business/ads-guide/update/image/facebook-story", geprueft: 2026-11-17}
+    pflichtangaben: {wert: [produktname, preis, cta], status: interne Vorgabe, quelle: "skills/kanalformate/SKILL.md", geprueft: 2026-11-17}
+
+  google_display_banner:
+    name: Google Display – responsive Anzeige (Querformat)
+    plattform: google_ads
+    layout: banner
+    bild:
+      breite_px:              {wert: 1200,     status: Empfehlung, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17, hinweis: "Minimum 600×314"}
+      hoehe_px:               {wert: 628,      status: Empfehlung, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17}
+      seitenverhaeltnis:      {wert: "1.91:1", status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17}
+      max_textanteil_prozent: {wert: 20,       status: offizielles Limit, quelle: "https://support.google.com/adspolicy/answer/6363786", geprueft: 2026-11-17, hinweis: "inkl. Logos mit Text"}
+      sichere_zone:
+        links_prozent:  {wert: 5, status: Empfehlung, quelle: "https://support.google.com/google-ads/answer/10042900", geprueft: 2026-11-17, hinweis: "Bild kann seitlich bis 5 % beschnitten werden"}
+        rechts_prozent: {wert: 5, status: Empfehlung, quelle: "https://support.google.com/google-ads/answer/10042900", geprueft: 2026-11-17, hinweis: "Bild kann seitlich bis 5 % beschnitten werden"}
+    textfelder:
+      titel:
+        bezeichnung: Kurzer Titel
+        max_zeichen: {wert: 30, status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17}
+        min_anzahl:  {wert: 1,  status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17}
+        max_anzahl:  {wert: 5,  status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17}
+      langer_titel:
+        bezeichnung: Langer Titel
+        max_zeichen: {wert: 90, status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17}
+      beschreibung:
+        bezeichnung: Beschreibung
+        max_zeichen: {wert: 90, status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17}
+        min_anzahl:  {wert: 1,  status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17}
+        max_anzahl:  {wert: 5,  status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17}
+      firmenname:
+        bezeichnung: Name des Unternehmens
+        max_zeichen: {wert: 25, status: offizielles Limit, quelle: "https://support.google.com/google-ads/answer/17090561", geprueft: 2026-11-17}
+    pflichtangaben: {wert: [produktbild, preis], status: interne Vorgabe, quelle: "skills/kanalformate/SKILL.md", geprueft: 2026-11-17, hinweis: "Titel und Beschreibung laufen als Textassets, nicht im Bild"}

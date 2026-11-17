@@ -1,0 +1,38 @@
+# Erklärung: SKILL.md
+waehrung: CHF
+preis_exakt: true
+
+# Zahlen mit diesen Einheiten müssen belegt sein
+einheiten: [h, Std., Stunden, min, mAh, Wh, W, V, GB, TB, MB, mm, cm, m, g, kg, Hz, kHz, dB, "%", Zoll, "\"", MP, fps, Liter, l, Watt]
+
+# Wo ein Beleg stehen darf
+belegfelder: [name, properties, description]
+
+superlative_nur_mit_beleg:
+  - beste
+  - bester
+  - bestes
+  - besten
+  - günstigste
+  - günstigster
+  - günstigstes
+  - leiseste
+  - leistungsstärkste
+  - schnellste
+  - einzige
+  - Nr. 1
+  - Testsieger
+  - unschlagbar
+
+bewertungen_nur_mit_beleg: true
+
+verbotene_aussagen:
+  - kategorie: rabatt_aktion
+    begruendung: Die Schnittstelle liefert keine Rabatte; Aktionsaussagen wären unbelegt.
+    begriffe: [Rabatt, Aktion, Sale, reduziert, Deal, Schnäppchen, Gutschein, Sparen, sparst, "% günstiger", "statt CHF", Black Friday, Cyber Monday, Ausverkauf]
+  - kategorie: verfuegbarkeit
+    begruendung: Die Schnittstelle liefert keinen Lagerbestand.
+    begriffe: [an Lager, sofort lieferbar, sofort verfügbar, nur noch, solange Vorrat, ausverkauft, Restposten]
+  - kategorie: lieferung
+    begruendung: Die Schnittstelle liefert keine Lieferzeiten oder Versandkonditionen.
+    begriffe: [morgen bei dir, Lieferung morgen, heute bestellt, Gratisversand, gratis Versand, versandkostenfrei, kostenloser Versand, Express]

@@ -1,0 +1,41 @@
+# Erklärung: SKILL.md
+anrede: du
+verbotene_zeichen: ["ß"]
+max_ausrufezeichen: 1
+verbotene_floskeln:
+  - revolutionär
+  - Gamechanger
+  - Game-Changer
+  - Must-have
+  - Must-Have
+  - jetzt zuschlagen
+  - nicht verpassen
+  - das Beste vom Besten
+  - unvergleichlich
+  - einzigartiges Erlebnis
+  - Sie werden begeistert sein
+
+rubrik:
+  skala_min: 1
+  skala_max: 5
+  kriterien:
+    - id: ehrlich
+      name: Ehrlich statt laut
+      frage: Verspricht der Text nur, was das Produkt laut Daten kann, ohne Übertreibung?
+      hoch: Konkreter, belegbarer Nutzen; Grenzen werden nicht verschwiegen.
+      tief: Übertreibungen, leere Versprechen, Hype-Vokabular.
+    - id: unkonventionell
+      name: Unkonventionell mit Substanz
+      frage: Hat der Text einen überraschenden Blickwinkel, der trotzdem zum Produktnutzen führt?
+      hoch: Eigener Dreh oder Selbstironie, die den Nutzen schärft.
+      tief: Austauschbarer Werbesatz, den jeder Händler schreiben könnte.
+    - id: zielgruppennah
+      name: Nah an der Zielgruppe
+      frage: Spricht der Text die Zielgruppe in ihrer konkreten Situation an (Du-Form)?
+      hoch: Situation der Zielgruppe ist erkennbar (z.B. Pendeln, Prüfungsphase).
+      tief: Generisch, Sie-Form oder an niemand Bestimmten gerichtet.
+    - id: klar
+      name: Klar und kurz
+      frage: Ist der Text auf den ersten Blick verständlich, ein Gedanke pro Satz?
+      hoch: Kurze Sätze, aktive Verben, keine Substantivketten.
+      tief: Verschachtelt, Fachjargon ohne Nutzen, mehrere Gedanken vermischt.
