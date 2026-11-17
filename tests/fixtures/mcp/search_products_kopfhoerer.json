@@ -1,0 +1,473 @@
+{
+  "_meta": {
+    "server_url": "https://mcp.galaxus.ch",
+    "recorded_at": "2026-11-17T12:14:11+00:00",
+    "mcp_sdk_version": "2.3.0",
+    "arguments": {
+      "query": "Kopfhörer Noise Cancelling",
+      "agentInfo": "creative-automation-agent/0.1 (private portfolio project); model: none (discovery)",
+      "first": 5,
+      "maxPrice": 200,
+      "language": "de",
+      "userIntent": "Kopfhörer für Pendler bis CHF 200"
+    }
+  },
+  "result": {
+    "_meta": {
+      "toolName": "search_products",
+      "response": {
+        "data": {
+          "serverToolShopSearch": {
+            "additionalQueryInfo": {
+              "correctedSearchTerm": null
+            },
+            "products": {
+              "totalCount": 905,
+              "edges": [
+                {
+                  "node": {
+                    "trackingId": 76213669,
+                    "name": "Noise Cancelling Wired",
+                    "nameWithProperties": "Noise Cancelling Wired (ANC, Kabelgebunden)",
+                    "nameExtensions": {
+                      "properties": "ANC, Kabelgebunden"
+                    },
+                    "description": "Die einfachste Möglichkeit, deine Musik ohne Ablenkungen zu geniessen. Die kabelgebundenen Noise-Cancelling Earbuds von Bose haben ein Retro-Design, das für Oldschool-Vibes sorgt, dabei aber den Bose Spitzenklang und erstklassiges Noise-Cancelling bietet, um dir mehr Hörgenuss zu schenken. Einfach Kabel einstecken, auf Play drücken und schon hörst du unkompliziert deine Lieblingssongs. Dank USB-C-Anschluss sind sie mit zahlreichen Geräten kompatibel. Und weil es Bose ist, bekommst du die kristallklare Audio-Performance, die du erwartest. Wenn die Quelle es hergibt, unterstützen die Earbuds auch verlustfreies Hören. Dank QuietControl-Technologie geniesst du jeden Musikmoment noch mehr. Die erstklassige Bose Noise-Cancelling-Technologie überprüft ständig Aussengeräusche und reagiert auf sie, um sie auszublenden, während du deine Musik oder andere Inhalte hörst. Den richtigen Sitz zu finden, geht auch ganz easy. Die Earbuds selbst sind elegant und klein, wobei es die Ohreinsätze in drei Grössen gibt (S, M und L) und die Stabilitätsaufsätze in zwei (M und L). Kombiniere die Grössen beider Elemente so, dass die Earbuds sicher und bequem im Ohr sitzen. Wenn du Musik hören willst, kannst du per Fernbedienung und Mikrofon am Kabel die Wiedergabe und Lautstärke steuern und kristallklare Telefonate führen.",
+                    "productType": {
+                      "name": "Kopfhörer",
+                      "id": "UHJvZHVjdFR5cGUKaTQ4"
+                    },
+                    "brand": {
+                      "name": "Bose",
+                      "id": "QnJhbmQKaTg3"
+                    },
+                    "price": {
+                      "amountInclusive": 99,
+                      "currency": "CHF"
+                    },
+                    "relativeUrl": "/de/s1/product/bose-noise-cancelling-wired-anc-kabelgebunden-kopfhoerer-76213669",
+                    "previewImage": {
+                      "relativeUrl": "/productimages/1/5/9/1/0/1/8/3/6/1/0/5/5/9/7/2/0/3/0/01a0f346-17ec-7056-a750-5890e0718cfd",
+                      "width": 837,
+                      "height": 1107
+                    },
+                    "ratingSummary": {
+                      "averageRating": 4.8,
+                      "ratingCount": 5
+                    },
+                    "seoProductRating": {
+                      "pros": [
+                        "Passen in beide meine Ohren"
+                      ],
+                      "cons": []
+                    },
+                    "id": "UHJvZHVjdApkNzYyMTM2Njk6MTo0MDY4MDI=",
+                    "labels": [],
+                    "insteadOfPrice": null,
+                    "availability": {
+                      "availabilityClassification": "QUARTER",
+                      "id": "UHJvZHVjdEF2YWlsYWJpbGl0eQpkNzYyMTM2Njk6MDoxNDYxOTk1NjE="
+                    },
+                    "previewImages": {
+                      "edges": [
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/1/5/9/1/0/1/8/3/6/1/0/5/5/9/7/2/0/3/0/01a0f346-17ec-7056-a750-5890e0718cfd",
+                            "width": 837,
+                            "height": 1107
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/5/2/1/2/5/8/1/4/4/2/9/2/0/8/1/2/8/0/2/01a0f297-8dec-718a-b598-92be409a7576",
+                            "width": 1200,
+                            "height": 1200
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/6/1/9/2/4/7/1/8/5/8/0/1/4/1/6/6/7/8/6/01a0f346-17cf-7ab4-b720-f58f3669b352",
+                            "width": 923,
+                            "height": 1077
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/2/9/9/6/4/0/9/3/7/7/9/2/5/6/9/3/1/7/2/01a0f298-0807-7f95-aee0-9d0bf9e96c45",
+                            "width": 1200,
+                            "height": 1200
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "trackingId": 38631244,
+                    "name": "QuietComfort",
+                    "nameWithProperties": "QuietComfort (ANC, 24 h, Kabelgebunden, Kabellos)",
+                    "nameExtensions": {
+                      "properties": "ANC, 24 h, Kabelgebunden, Kabellos"
+                    },
+                    "description": "Auch unterwegs super Sounds und Beats geniessen - mit den Bose QuietComfort Noise-Cancelling Headphones. Naturgetreuer Klang und legendäres Noise-Cancelling blenden den Lärm aus oder lassen das Wichtigste durch - mit dem Quiet- und Aware-Modus. Oder Sie erstellen Ihren persönlichen Modus, bei dem genau so viele Umweltgeräusche hörbar bleiben, wie es für die Situation passend ist. Diese Over-Ear-Kopfhörer präsentieren sich in einem kultigen und komfortablen Design, mit einem optionalen Audiokabel samt Mikrofon. So gibt es auch ohne Bluetooth-Verbindung satten Sound.",
+                    "productType": {
+                      "name": "Kopfhörer",
+                      "id": "UHJvZHVjdFR5cGUKaTQ4"
+                    },
+                    "brand": {
+                      "name": "Bose",
+                      "id": "QnJhbmQKaTg3"
+                    },
+                    "price": {
+                      "amountInclusive": 159,
+                      "currency": "CHF"
+                    },
+                    "relativeUrl": "/de/s1/product/bose-quietcomfort-anc-24-h-kabelgebunden-kabellos-kopfhoerer-38631244",
+                    "previewImage": {
+                      "relativeUrl": "/productimages/6/3/2/6/6/0/1/8/4/8/1/5/0/2/9/2/8/3/9/01a0b626-4eae-76d0-b956-ea3c630e926f",
+                      "width": 354,
+                      "height": 468
+                    },
+                    "ratingSummary": {
+                      "averageRating": 4.5,
+                      "ratingCount": 298
+                    },
+                    "seoProductRating": {
+                      "pros": [
+                        "Bequem auch für längeres tragen",
+                        "Sound ist grossartig",
+                        "Toller Klang und Noise Cancemuss die Lautstärke extrem hoch eingestellt werdenlling"
+                      ],
+                      "cons": [
+                        "für die Nutzung ist eine App erforderlich, welche penetrant nervt sich zu registrieren",
+                        "Fehlender Adapter um ohne Notebook den Akku aufzuladen ",
+                        "Verarbeitung wirkt eher günstig"
+                      ]
+                    },
+                    "id": "UHJvZHVjdApkMzg2MzEyNDQ6MTo0MDY4MDI=",
+                    "labels": [
+                      "DISCOUNT",
+                      "SHOWROOM"
+                    ],
+                    "insteadOfPrice": {
+                      "type": "SALES_PRICE_BEFORE",
+                      "rebate": 15,
+                      "price": {
+                        "amountInclusive": 186
+                      }
+                    },
+                    "availability": {
+                      "availabilityClassification": "TICK",
+                      "id": "UHJvZHVjdEF2YWlsYWJpbGl0eQpkMzg2MzEyNDQ6MDo1NTkxNzI3Nw=="
+                    },
+                    "previewImages": {
+                      "edges": [
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/6/3/2/6/6/0/1/8/4/8/1/5/0/2/9/2/8/3/9/01a0b626-4eae-76d0-b956-ea3c630e926f",
+                            "width": 354,
+                            "height": 468
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/6/9/9/2/1/8/7/6/1/3/5/9/5/5/9/9/4/8/1/019f39ca-4c2c-782c-86ee-a60dda28b787",
+                            "width": 2574,
+                            "height": 3323
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/2/1/4/0/4/9/9/9/7/5/9/5/5/0/4/2/9/2/6/019f3c54-6e69-7399-be02-c89d06973bb9",
+                            "width": 2537,
+                            "height": 3500
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/8/0/0/6/1/6/1/9/7/9/9/0/3/5/5/7/3/019f3c54-a3db-778a-9e28-3dbca7525f3c",
+                            "width": 1967,
+                            "height": 2685
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "trackingId": 76213675,
+                    "name": "Noise Cancelling Wired",
+                    "nameWithProperties": "Noise Cancelling Wired (ANC, Kabelgebunden)",
+                    "nameExtensions": {
+                      "properties": "ANC, Kabelgebunden"
+                    },
+                    "description": "Die einfachste Möglichkeit, deine Musik ohne Ablenkungen zu geniessen. Die kabelgebundenen Noise-Cancelling Earbuds von Bose haben ein Retro-Design, das für Oldschool-Vibes sorgt, dabei aber den Bose Spitzenklang und erstklassiges Noise-Cancelling bietet, um dir mehr Hörgenuss zu schenken. Einfach Kabel einstecken, auf Play drücken und schon hörst du unkompliziert deine Lieblingssongs. Dank USB-C-Anschluss sind sie mit zahlreichen Geräten kompatibel. Und weil es Bose ist, bekommst du die kristallklare Audio-Performance, die du erwartest. Wenn die Quelle es hergibt, unterstützen die Earbuds auch verlustfreies Hören. Dank QuietControl-Technologie geniesst du jeden Musikmoment noch mehr. Die erstklassige Bose Noise-Cancelling-Technologie überprüft ständig Aussengeräusche und reagiert auf sie, um sie auszublenden, während du deine Musik oder andere Inhalte hörst. Den richtigen Sitz zu finden, geht auch ganz easy. Die Earbuds selbst sind elegant und klein, wobei es die Ohreinsätze in drei Grössen gibt (S, M und L) und die Stabilitätsaufsätze in zwei (M und L). Kombiniere die Grössen beider Elemente so, dass die Earbuds sicher und bequem im Ohr sitzen. Wenn du Musik hören willst, kannst du per Fernbedienung und Mikrofon am Kabel die Wiedergabe und Lautstärke steuern und kristallklare Telefonate führen.",
+                    "productType": {
+                      "name": "Kopfhörer",
+                      "id": "UHJvZHVjdFR5cGUKaTQ4"
+                    },
+                    "brand": {
+                      "name": "Bose",
+                      "id": "QnJhbmQKaTg3"
+                    },
+                    "price": {
+                      "amountInclusive": 96.8,
+                      "currency": "CHF"
+                    },
+                    "relativeUrl": "/de/s1/product/bose-noise-cancelling-wired-anc-kabelgebunden-kopfhoerer-76213675",
+                    "previewImage": {
+                      "relativeUrl": "/productimages/4/5/1/5/4/1/6/0/9/1/7/4/6/6/1/4/3/2/5/01a0f346-1606-7fb5-893a-4086825790b1",
+                      "width": 837,
+                      "height": 1107
+                    },
+                    "ratingSummary": {
+                      "averageRating": 4.8,
+                      "ratingCount": 5
+                    },
+                    "seoProductRating": null,
+                    "id": "UHJvZHVjdApkNzYyMTM2NzU6MTo0MDY4MDI=",
+                    "labels": [],
+                    "insteadOfPrice": null,
+                    "availability": {
+                      "availabilityClassification": "HALF",
+                      "id": "UHJvZHVjdEF2YWlsYWJpbGl0eQpkNzYyMTM2NzU6MDoxNDYxOTk1NTU="
+                    },
+                    "previewImages": {
+                      "edges": [
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/4/5/1/5/4/1/6/0/9/1/7/4/6/6/1/4/3/2/5/01a0f346-1606-7fb5-893a-4086825790b1",
+                            "width": 837,
+                            "height": 1107
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/5/9/2/0/5/5/4/9/9/3/7/3/6/6/7/1/7/4/8/01a0f2a1-2db9-7240-88e5-e2f011464440",
+                            "width": 1600,
+                            "height": 1600
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/2/8/4/4/8/8/4/2/7/4/3/0/1/8/0/5/9/4/7/01a0f346-1626-75a1-a5fc-bd8e35d10442",
+                            "width": 923,
+                            "height": 1076
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/7/1/5/3/9/4/2/7/7/3/1/5/4/9/3/2/4/5/1/01a0f2a1-6ca0-73a1-8d85-c730dcf83ba4",
+                            "width": 2000,
+                            "height": 2000
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "trackingId": 61276930,
+                    "name": "Momentum 4 Wireless",
+                    "nameWithProperties": "Momentum 4 Wireless (ANC, 60 h, Kabelgebunden, Kabellos)",
+                    "nameExtensions": {
+                      "properties": "ANC, 60 h, Kabelgebunden, Kabellos"
+                    },
+                    "description": "Die Momentum 4 Wireless Kopfhörer von Sennheiser bieten ein erstklassiges Hörerlebnis mit modernster Technologie. Diese kabellosen Over-Ear-Kopfhörer sind mit aktiver Geräuschunterdrückung ausgestattet, die es ermöglicht, störende Umgebungsgeräusche zu minimieren und sich ganz auf die Musik zu konzentrieren. Die Kopfhörer verfügen über eine beeindruckende Akkulaufzeit von bis zu 60 Stunden, was sie ideal für lange Reisen oder den täglichen Gebrauch macht. Dank der Bluetooth-Technologie und der Unterstützung für aptX und AAC wird eine hochwertige Audioübertragung gewährleistet. Die Touchpad-Fernbedienung ermöglicht eine einfache Steuerung von Musik und Anrufen, während das abnehmbare Kabel zusätzliche Flexibilität bietet. Die Momentum 4 Wireless Kopfhörer sind nicht nur funktional, sondern auch stilvoll und komfortabel, was sie zu einer ausgezeichneten Wahl für Musikliebhaber macht.\n\n- Aktive Geräuschunterdrückung für ungestörtes Hören\n- Bis zu 60 Stunden Akkulaufzeit für langanhaltenden Genuss\n- Touchpad-Fernbedienung für einfache Musiksteuerung\n- Unterstützung für aptX und AAC für hochwertige Audioübertragung\n- Abnehmbares Kabel für zusätzliche Flexibilität.",
+                    "productType": {
+                      "name": "Kopfhörer",
+                      "id": "UHJvZHVjdFR5cGUKaTQ4"
+                    },
+                    "brand": {
+                      "name": "Sennheiser",
+                      "id": "QnJhbmQKaTQzMg=="
+                    },
+                    "price": {
+                      "amountInclusive": 139,
+                      "currency": "CHF"
+                    },
+                    "relativeUrl": "/de/s1/product/sennheiser-momentum-4-wireless-anc-60-h-kabelgebunden-kabellos-kopfhoerer-61276930",
+                    "previewImage": {
+                      "relativeUrl": "/productimages/8/0/2/1/1/9/9/1/4/8/9/2/9/3/5/0/0/2/4/01a0d416-ced9-7d56-8dcc-20e4dfe6a2fa",
+                      "width": 676,
+                      "height": 929
+                    },
+                    "ratingSummary": {
+                      "averageRating": 4.5,
+                      "ratingCount": 843
+                    },
+                    "seoProductRating": {
+                      "pros": [
+                        "Sound (für casual zwecke)",
+                        "Der Kopfhörer trägt sich sehr bequem.",
+                        "Leicht zu tragen, handling einfach, Bass voll, Klang klar, "
+                      ],
+                      "cons": [
+                        "Tragekomfort etwas schwer und schwitzig",
+                        "App funktioniert, mässige Funktion (wie alle Wettbewerber)",
+                        "Touch-Bedienung an der Aussenseite ist absolut unpraktisch"
+                      ]
+                    },
+                    "id": "UHJvZHVjdApkNjEyNzY5MzA6MTo0MDY4MDI=",
+                    "labels": [
+                      "DISCOUNT",
+                      "SHOWROOM"
+                    ],
+                    "insteadOfPrice": {
+                      "type": "SALES_PRICE_BEFORE",
+                      "rebate": 18,
+                      "price": {
+                        "amountInclusive": 170
+                      }
+                    },
+                    "availability": {
+                      "availabilityClassification": "TICK",
+                      "id": "UHJvZHVjdEF2YWlsYWJpbGl0eQpkNjEyNzY5MzA6MDoxMDkyMDM0OTk="
+                    },
+                    "previewImages": {
+                      "edges": [
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/8/0/2/1/1/9/9/1/4/8/9/2/9/3/5/0/0/2/4/01a0d416-ced9-7d56-8dcc-20e4dfe6a2fa",
+                            "width": 676,
+                            "height": 929
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/5/8/3/8/9/0/1/9/5/6/2/3/3/6/0/3/5/6/0/01a0d417-0106-735c-babb-7a2869975fe2",
+                            "width": 583,
+                            "height": 631
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/1/3/0/0/5/8/4/7/9/7/7/5/8/0/1/7/3/1/7/01998387-3b81-7fb7-a32a-24aca04aad96",
+                            "width": 599,
+                            "height": 1200
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/6/7/6/3/3/6/9/2/4/8/8/9/3/1/2/5/0/4/8/01a0d417-0116-7206-a0b1-909ab9a3863f",
+                            "width": 161,
+                            "height": 616
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "trackingId": 76213705,
+                    "name": "Noise Cancelling Wired",
+                    "nameWithProperties": "Noise Cancelling Wired (ANC, Kabelgebunden)",
+                    "nameExtensions": {
+                      "properties": "ANC, Kabelgebunden"
+                    },
+                    "description": "Die einfachste Möglichkeit, deine Musik ohne Ablenkungen zu geniessen. Die kabelgebundenen Noise-Cancelling Earbuds von Bose haben ein Retro-Design, das für Oldschool-Vibes sorgt, dabei aber den Bose Spitzenklang und erstklassiges Noise-Cancelling bietet, um dir mehr Hörgenuss zu schenken. Einfach Kabel einstecken, auf Play drücken und schon hörst du unkompliziert deine Lieblingssongs. Dank USB-C-Anschluss sind sie mit zahlreichen Geräten kompatibel. Und weil es Bose ist, bekommst du die kristallklare Audio-Performance, die du erwartest. Wenn die Quelle es hergibt, unterstützen die Earbuds auch verlustfreies Hören. Dank QuietControl-Technologie geniesst du jeden Musikmoment noch mehr. Die erstklassige Bose Noise-Cancelling-Technologie überprüft ständig Aussengeräusche und reagiert auf sie, um sie auszublenden, während du deine Musik oder andere Inhalte hörst. Den richtigen Sitz zu finden, geht auch ganz easy. Die Earbuds selbst sind elegant und klein, wobei es die Ohreinsätze in drei Grössen gibt (S, M und L) und die Stabilitätsaufsätze in zwei (M und L). Kombiniere die Grössen beider Elemente so, dass die Earbuds sicher und bequem im Ohr sitzen. Wenn du Musik hören willst, kannst du per Fernbedienung und Mikrofon am Kabel die Wiedergabe und Lautstärke steuern und kristallklare Telefonate führen.",
+                    "productType": {
+                      "name": "Kopfhörer",
+                      "id": "UHJvZHVjdFR5cGUKaTQ4"
+                    },
+                    "brand": {
+                      "name": "Bose",
+                      "id": "QnJhbmQKaTg3"
+                    },
+                    "price": {
+                      "amountInclusive": 99,
+                      "currency": "CHF"
+                    },
+                    "relativeUrl": "/de/s1/product/bose-noise-cancelling-wired-anc-kabelgebunden-kopfhoerer-76213705",
+                    "previewImage": {
+                      "relativeUrl": "/productimages/3/7/0/3/3/4/1/2/9/8/3/9/0/2/1/1/6/3/4/01a0f346-1758-749d-a612-43c8badca466",
+                      "width": 837,
+                      "height": 1107
+                    },
+                    "ratingSummary": {
+                      "averageRating": 4.8,
+                      "ratingCount": 5
+                    },
+                    "seoProductRating": null,
+                    "id": "UHJvZHVjdApkNzYyMTM3MDU6MTo0MDY4MDI=",
+                    "labels": [],
+                    "insteadOfPrice": null,
+                    "availability": {
+                      "availabilityClassification": "QUARTER",
+                      "id": "UHJvZHVjdEF2YWlsYWJpbGl0eQpkNzYyMTM3MDU6MDoxNDYxOTk1NTE="
+                    },
+                    "previewImages": {
+                      "edges": [
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/3/7/0/3/3/4/1/2/9/8/3/9/0/2/1/1/6/3/4/01a0f346-1758-749d-a612-43c8badca466",
+                            "width": 837,
+                            "height": 1107
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/5/9/2/0/5/5/4/9/9/3/7/3/6/6/7/1/7/4/8/01a0f2a1-2db9-7240-88e5-e2f011464440",
+                            "width": 1600,
+                            "height": 1600
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/7/7/6/8/1/2/6/9/7/4/7/7/9/6/9/6/4/4/01a0f346-1642-71ea-ac6b-c5daeceb669d",
+                            "width": 923,
+                            "height": 1076
+                          }
+                        },
+                        {
+                          "node": {
+                            "relativeUrl": "/productimages/7/1/5/3/9/4/2/7/7/3/1/5/4/9/3/2/4/5/1/01a0f2a1-6ca0-73a1-8d85-c730dcf83ba4",
+                            "width": 2000,
+                            "height": 2000
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "id": "U2hvcFNlYXJjaFJlc3VsdApkH4sIAAAAAAAAA1WLzQqCQBCAX0Xm7MEuHfYqSRJEKXQKZFxHHdx2ZXYNRHz3MOnQ9ftZ4D6RzKDg4sa2f05Jkh2FJLo69hSlaDUZw7aDGEpC0f23T51tuQO1QDnwWFDDQjqACjLRGkNuOTCafcht67byJvxCmQsKwvT+2Rt6D+r/UCcbSKpNVQd1nmvhZjcQQ+4fpIOTHWRoTI16ANWi8bSuH8a+icjRAAAA"
+          }
+        }
+      },
+      "params": {
+        "id": "4c4ffb1badd35279215a77ce6b160f56",
+        "metadata": {},
+        "name": "searchProductsAppToolQuery",
+        "operationKind": "query",
+        "text": null
+      },
+      "variables": {
+        "query": "Kopfhörer Noise Cancelling",
+        "first": 5,
+        "filters": [
+          {
+            "filterIdentifier": "pr",
+            "min": 0,
+            "max": 200
+          }
+        ]
+      },
+      "locale": "de-CH",
+      "websiteUrl": "https://www.galaxus.ch"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"correctedSearchTerm\":null,\"totalCount\":905,\"products\":[{\"id\":76213669,\"name\":\"Noise Cancelling Wired\",\"properties\":\"ANC, Kabelgebunden\",\"description\":\"Die einfachste Möglichkeit, deine Musik ohne Ablenkungen zu geniessen. Die kabelgebundenen Noise-Cancelling Earbuds von Bose haben ein Retro-Design, das für Oldschool-Vibes sorgt, dabei aber den Bose Spitzenklang und erstklassiges Noise-Cancelling bietet, um dir mehr Hörgenuss zu schenken. Einfach Kabel einstecken, auf Play drücken und schon hörst du unkompliziert deine Lieblingssongs. Dank USB-C-Anschluss sind sie mit zahlreichen Geräten kompatibel. Und weil es Bose ist, bekommst du die kristallklare Audio-Performance, die du erwartest. Wenn die Quelle es hergibt, unterstützen die Earbuds auch verlustfreies Hören. Dank QuietControl-Technologie geniesst du jeden Musikmoment noch mehr. Die erstklassige Bose Noise-Cancelling-Technologie überprüft ständig Aussengeräusche und reagiert auf sie, um sie auszublenden, während du deine Musik oder andere Inhalte hörst. Den richtigen Sitz zu finden, geht auch ganz easy. Die Earbuds selbst sind elegant und klein, wobei es die Ohreinsätze in drei Grössen gibt (S, M und L) und die Stabilitätsaufsätze in zwei (M und L). Kombiniere die Grössen beider Elemente so, dass die Earbuds sicher und bequem im Ohr sitzen. Wenn du Musik hören willst, kannst du per Fernbedienung und Mikrofon am Kabel die Wiedergabe und Lautstärke steuern und kristallklare Telefonate führen.\",\"productType\":\"Kopfhörer\",\"brand\":\"Bose\",\"priceIfAvailable\":{\"amountInclusive\":99,\"currency\":\"CHF\"},\"pageUrl\":\"https://www.galaxus.ch/de/s1/product/bose-noise-cancelling-wired-anc-kabelgebunden-kopfhoerer-76213669?utm_source=shop-mcp&utm_medium=tool&utm_campaign=search_products\",\"previewImage\":{\"url\":\"https://www.galaxus.ch/productimages/1/5/9/1/0/1/8/3/6/1/0/5/5/9/7/2/0/3/0/01a0f346-17ec-7056-a750-5890e0718cfd?utm_source=shop-mcp&utm_medium=tool&utm_campaign=search_products\",\"width\":837,\"height\":1107},\"ratingSummaryIfAvailable\":{\"averageRating\":4.8,\"ratingCount\":5},\"productReviewsSummaryIfAvailable\":{\"pros\":[\"Passen in beide meine Ohren\"],\"cons\":[]}},{\"id\":38631244,\"name\":\"QuietComfort\",\"properties\":\"ANC, 24 h, Kabelgebunden, Kabellos\",\"description\":\"Auch unterwegs super Sounds und Beats geniessen - mit den Bose QuietComfort Noise-Cancelling Headphones. Naturgetreuer Klang und legendäres Noise-Cancelling blenden den Lärm aus oder lassen das Wichtigste durch - mit dem Quiet- und Aware-Modus. Oder Sie erstellen Ihren persönlichen Modus, bei dem genau so viele Umweltgeräusche hörbar bleiben, wie es für die Situation passend ist. Diese Over-Ear-Kopfhörer präsentieren sich in einem kultigen und komfortablen Design, mit einem optionalen Audiokabel samt Mikrofon. So gibt es auch ohne Bluetooth-Verbindung satten Sound.\",\"productType\":\"Kopfhörer\",\"brand\":\"Bose\",\"priceIfAvailable\":{\"amountInclusive\":159,\"currency\":\"CHF\"},\"pageUrl\":\"https://www.galaxus.ch/de/s1/product/bose-quietcomfort-anc-24-h-kabelgebunden-kabellos-kopfhoerer-38631244?utm_source=shop-mcp&utm_medium=tool&utm_campaign=search_products\",\"previewImage\":{\"url\":\"https://www.galaxus.ch/productimages/6/3/2/6/6/0/1/8/4/8/1/5/0/2/9/2/8/3/9/01a0b626-4eae-76d0-b956-ea3c630e926f?utm_source=shop-mcp&utm_medium=tool&utm_campaign=search_products\",\"width\":354,\"height\":468},\"ratingSummaryIfAvailable\":{\"averageRating\":4.5,\"ratingCount\":298},\"productReviewsSummaryIfAvailable\":{\"pros\":[\"Bequem auch für längeres tragen\",\"Sound ist grossartig\",\"Toller Klang und Noise Cancemuss die Lautstärke extrem hoch eingestellt werdenlling\"],\"cons\":[\"für die Nutzung ist eine App erforderlich, welche penetrant nervt sich zu registrieren\",\"Fehlender Adapter um ohne Notebook den Akku aufzuladen \",\"Verarbeitung wirkt eher günstig\"]}},{\"id\":76213675,\"name\":\"Noise Cancelling Wired\",\"properties\":\"ANC, Kabelgebunden\",\"description\":\"Die einfachste Möglichkeit, deine Musik ohne Ablenkungen zu geniessen. Die kabelgebundenen Noise-Cancelling Earbuds von Bose haben ein Retro-Design, das für Oldschool-Vibes sorgt, dabei aber den Bose Spitzenklang und erstklassiges Noise-Cancelling bietet, um dir mehr Hörgenuss zu schenken. Einfach Kabel einstecken, auf Play drücken und schon hörst du unkompliziert deine Lieblingssongs. Dank USB-C-Anschluss sind sie mit zahlreichen Geräten kompatibel. Und weil es Bose ist, bekommst du die kristallklare Audio-Performance, die du erwartest. Wenn die Quelle es hergibt, unterstützen die Earbuds auch verlustfreies Hören. Dank QuietControl-Technologie geniesst du jeden Musikmoment noch mehr. Die erstklassige Bose Noise-Cancelling-Technologie überprüft ständig Aussengeräusche und reagiert auf sie, um sie auszublenden, während du deine Musik oder andere Inhalte hörst. Den richtigen Sitz zu finden, geht auch ganz easy. Die Earbuds selbst sind elegant und klein, wobei es die Ohreinsätze in drei Grössen gibt (S, M und L) und die Stabilitätsaufsätze in zwei (M und L). Kombiniere die Grössen beider Elemente so, dass die Earbuds sicher und bequem im Ohr sitzen. Wenn du Musik hören willst, kannst du per Fernbedienung und Mikrofon am Kabel die Wiedergabe und Lautstärke steuern und kristallklare Telefonate führen.\",\"productType\":\"Kopfhörer\",\"brand\":\"Bose\",\"priceIfAvailable\":{\"amountInclusive\":96.8,\"currency\":\"CHF\"},\"pageUrl\":\"https://www.galaxus.ch/de/s1/product/bose-noise-cancelling-wired-anc-kabelgebunden-kopfhoerer-76213675?utm_source=shop-mcp&utm_medium=tool&utm_campaign=search_products\",\"previewImage\":{\"url\":\"https://www.galaxus.ch/productimages/4/5/1/5/4/1/6/0/9/1/7/4/6/6/1/4/3/2/5/01a0f346-1606-7fb5-893a-4086825790b1?utm_source=shop-mcp&utm_medium=tool&utm_campaign=search_products\",\"width\":837,\"height\":1107},\"ratingSummaryIfAvailable\":{\"averageRating\":4.8,\"ratingCount\":5},\"productReviewsSummaryIfAvailable\":null},{\"id\":61276930,\"name\":\"Momentum 4 Wireless\",\"properties\":\"ANC, 60 h, Kabelgebunden, Kabellos\",\"description\":\"Die Momentum 4 Wireless Kopfhörer von Sennheiser bieten ein erstklassiges Hörerlebnis mit modernster Technologie. Diese kabellosen Over-Ear-Kopfhörer sind mit aktiver Geräuschunterdrückung ausgestattet, die es ermöglicht, störende Umgebungsgeräusche zu minimieren und sich ganz auf die Musik zu konzentrieren. Die Kopfhörer verfügen über eine beeindruckende Akkulaufzeit von bis zu 60 Stunden, was sie ideal für lange Reisen oder den täglichen Gebrauch macht. Dank der Bluetooth-Technologie und der Unterstützung für aptX und AAC wird eine hochwertige Audioübertragung gewährleistet. Die Touchpad-Fernbedienung ermöglicht eine einfache Steuerung von Musik und Anrufen, während das abnehmbare Kabel zusätzliche Flexibilität bietet. Die Momentum 4 Wireless Kopfhörer sind nicht nur funktional, sondern auch stilvoll und komfortabel, was sie zu einer ausgezeichneten Wahl für Musikliebhaber macht.\\n\\n- Aktive Geräuschunterdrückung für ungestörtes Hören\\n- Bis zu 60 Stunden Akkulaufzeit für langanhaltenden Genuss\\n- Touchpad-Fernbedienung für einfache Musiksteuerung\\n- Unterstützung für aptX und AAC für hochwertige Audioübertragung\\n- Abnehmbares Kabel für zusätzliche Flexibilität.\",\"productType\":\"Kopfhörer\",\"brand\":\"Sennheiser\",\"priceIfAvailable\":{\"amountInclusive\":139,\"currency\":\"CHF\"},\"pageUrl\":\"https://www.galaxus.ch/de/s1/product/sennheiser-momentum-4-wireless-anc-60-h-kabelgebunden-kabellos-kopfhoerer-61276930?utm_source=shop-mcp&utm_medium=tool&utm_campaign=search_products\",\"previewImage\":{\"url\":\"https://www.galaxus.ch/productimages/8/0/2/1/1/9/9/1/4/8/9/2/9/3/5/0/0/2/4/01a0d416-ced9-7d56-8dcc-20e4dfe6a2fa?utm_source=shop-mcp&utm_medium=tool&utm_campaign=search_products\",\"width\":676,\"height\":929},\"ratingSummaryIfAvailable\":{\"averageRating\":4.5,\"ratingCount\":843},\"productReviewsSummaryIfAvailable\":{\"pros\":[\"Sound (für casual zwecke)\",\"Der Kopfhörer trägt sich sehr bequem.\",\"Leicht zu tragen, handling einfach, Bass voll, Klang klar, \"],\"cons\":[\"Tragekomfort etwas schwer und schwitzig\",\"App funktioniert, mässige Funktion (wie alle Wettbewerber)\",\"Touch-Bedienung an der Aussenseite ist absolut unpraktisch\"]}},{\"id\":76213705,\"name\":\"Noise Cancelling Wired\",\"properties\":\"ANC, Kabelgebunden\",\"description\":\"Die einfachste Möglichkeit, deine Musik ohne Ablenkungen zu geniessen. Die kabelgebundenen Noise-Cancelling Earbuds von Bose haben ein Retro-Design, das für Oldschool-Vibes sorgt, dabei aber den Bose Spitzenklang und erstklassiges Noise-Cancelling bietet, um dir mehr Hörgenuss zu schenken. Einfach Kabel einstecken, auf Play drücken und schon hörst du unkompliziert deine Lieblingssongs. Dank USB-C-Anschluss sind sie mit zahlreichen Geräten kompatibel. Und weil es Bose ist, bekommst du die kristallklare Audio-Performance, die du erwartest. Wenn die Quelle es hergibt, unterstützen die Earbuds auch verlustfreies Hören. Dank QuietControl-Technologie geniesst du jeden Musikmoment noch mehr. Die erstklassige Bose Noise-Cancelling-Technologie überprüft ständig Aussengeräusche und reagiert auf sie, um sie auszublenden, während du deine Musik oder andere Inhalte hörst. Den richtigen Sitz zu finden, geht auch ganz easy. Die Earbuds selbst sind elegant und klein, wobei es die Ohreinsätze in drei Grössen gibt (S, M und L) und die Stabilitätsaufsätze in zwei (M und L). Kombiniere die Grössen beider Elemente so, dass die Earbuds sicher und bequem im Ohr sitzen. Wenn du Musik hören willst, kannst du per Fernbedienung und Mikrofon am Kabel die Wiedergabe und Lautstärke steuern und kristallklare Telefonate führen.\",\"productType\":\"Kopfhörer\",\"brand\":\"Bose\",\"priceIfAvailable\":{\"amountInclusive\":99,\"currency\":\"CHF\"},\"pageUrl\":\"https://www.galaxus.ch/de/s1/product/bose-noise-cancelling-wired-anc-kabelgebunden-kopfhoerer-76213705?utm_source=shop-mcp&utm_medium=tool&utm_campaign=search_products\",\"previewImage\":{\"url\":\"https://www.galaxus.ch/productimages/3/7/0/3/3/4/1/2/9/8/3/9/0/2/1/1/6/3/4/01a0f346-1758-749d-a612-43c8badca466?utm_source=shop-mcp&utm_medium=tool&utm_campaign=search_products\",\"width\":837,\"height\":1107},\"ratingSummaryIfAvailable\":{\"averageRating\":4.8,\"ratingCount\":5},\"productReviewsSummaryIfAvailable\":null}]}"
+      }
+    ],
+    "isError": false,
+    "resultType": "complete"
+  }
+}

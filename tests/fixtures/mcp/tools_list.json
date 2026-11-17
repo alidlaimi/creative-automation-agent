@@ -1,0 +1,144 @@
+{
+  "_meta": {
+    "server_url": "https://mcp.galaxus.ch",
+    "recorded_at": "2026-11-17T12:14:11+00:00",
+    "mcp_sdk_version": "2.3.0"
+  },
+  "server_info": {
+    "name": "Galaxus",
+    "title": "Galaxus",
+    "version": "no-build-no-given",
+    "websiteUrl": "https://www.galaxus.ch",
+    "icons": [
+      {
+        "src": "https://mcp.galaxus.ch/static/icons/galaxus/mark-light-96.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "96x96"
+        ],
+        "theme": "light"
+      },
+      {
+        "src": "https://mcp.galaxus.ch/static/icons/galaxus/mark-light-256.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ],
+        "theme": "light"
+      },
+      {
+        "src": "https://mcp.galaxus.ch/static/icons/galaxus/mark-light.svg",
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ],
+        "theme": "light"
+      },
+      {
+        "src": "https://mcp.galaxus.ch/static/icons/galaxus/mark-dark-96.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "96x96"
+        ],
+        "theme": "dark"
+      },
+      {
+        "src": "https://mcp.galaxus.ch/static/icons/galaxus/mark-dark-256.png",
+        "mimeType": "image/png",
+        "sizes": [
+          "256x256"
+        ],
+        "theme": "dark"
+      },
+      {
+        "src": "https://mcp.galaxus.ch/static/icons/galaxus/mark-dark.svg",
+        "mimeType": "image/svg+xml",
+        "sizes": [
+          "any"
+        ],
+        "theme": "dark"
+      }
+    ]
+  },
+  "protocol_version": "2025-11-25",
+  "instructions": "\nThis is the MCP server for Galaxus. It provides data and tools for the MCP app running in the host environment.\nAvailable languages are en, de, fr, it, nl. Pass the user's language as each tool's `language` argument.\n      ",
+  "result": {
+    "ttlMs": 0,
+    "cacheScope": "private",
+    "tools": [
+      {
+        "name": "search_products",
+        "title": "Search products",
+        "description": "Search the product catalog of the shop this server is configured for, by free-text query, optionally filtered by an integer price range in the shop's currency. Returns JSON `{correctedSearchTerm, totalCount, products[]}`; each product has id, name, properties, description, productType, brand, `priceIfAvailable` (incl. VAT, null when no price is returned), `pageUrl`, `previewImage`, `ratingSummaryIfAvailable`, and `productReviewsSummaryIfAvailable` (review pros/cons) — not full reviews, stock, or delivery times. `correctedSearchTerm` is non-null when the query was spell-corrected. `errorMessage` appears when the search returns no product payload; invalid input (e.g. min > max) and transport failures return an MCP error result instead. Results are returned in the required `language`; available languages: en, de, fr, it, nl.",
+        "inputSchema": {
+          "type": "object",
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Search query - can be a product name, brand, category, or any keyword describing what the user is looking for"
+            },
+            "agentInfo": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Name, provider, and model version of the LLM agent making the request (e.g. 'Claude Code by Anthropic, <model id>'). Used for analytics only; does not affect results."
+            },
+            "first": {
+              "description": "Number of results to return (1-50, default 10)",
+              "default": 10,
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            },
+            "minPrice": {
+              "description": "Minimum price for the search results",
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000
+            },
+            "maxPrice": {
+              "description": "Maximum price for the search results",
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000
+            },
+            "userIntent": {
+              "description": "The user's intent for the search, if known. Used for analytics only; does not affect results. Do not include personal information such as names, ages, addresses, or health conditions.",
+              "type": "string"
+            },
+            "language": {
+              "type": "string",
+              "enum": [
+                "en",
+                "de",
+                "fr",
+                "it",
+                "nl"
+              ],
+              "description": "Language of the user's conversation, one of: en, de, fr, it, nl. Product data and the UI are returned in this language. Use \"en\" for any other language."
+            }
+          },
+          "required": [
+            "query",
+            "agentInfo",
+            "language"
+          ]
+        },
+        "annotations": {
+          "readOnlyHint": true,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "_meta": {
+          "ui": {
+            "resourceUri": "ui://mcp-app"
+          },
+          "ui/resourceUri": "ui://mcp-app"
+        }
+      }
+    ],
+    "resultType": "complete"
+  }
+}

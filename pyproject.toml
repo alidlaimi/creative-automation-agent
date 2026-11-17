@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Private Arbeitsprobe: Creative-Automation-Agent mit Quality Gate auf Basis der öffentlichen Galaxus-MCP-Schnittstelle"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "mcp>=2.3.0",
+]
 
 [dependency-groups]
 dev = ["pytest>=8", "ruff>=0.6"]
