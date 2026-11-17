@@ -6,3 +6,4 @@ Neue ADR: `docs/adr/NNNN-titel.md` nach Vorlage [0000-vorlage.md](0000-vorlage.m
 | Nr. | Titel | Status |
 |---|---|---|
 | 0001 | [Eigener MCP-Client statt MCP-Connector der Claude API](0001-eigener-mcp-client.md) | vorgeschlagen |
+| 0002 | [Datei-Cache für Antworten der Galaxus-Schnittstelle](0002-datei-cache.md) | vorgeschlagen |
