@@ -1,0 +1,32 @@
+# Geheimnisse
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Lokale Ergebnisse: Produktbilder und gerenderte Werbemittel nie ins Repo
+output/
+data/cache/
+eval/runs/
+
+# Playwright
+test-results/
+playwright-report/
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
