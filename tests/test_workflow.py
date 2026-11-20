@@ -256,7 +256,7 @@ def test_full_run_produces_variants_and_protocol():
     assert {s.name: s.version for s in record.skills} == {
         "faktencheck": "1.0.0",
         "kanalformate": "1.0.0",
-        "markenstimme": "1.0.0",
+        "markenstimme": "1.0.1",
     }
     assert record.cost_total_usd > 0 and len(record.costs) == 5
     assert "61276930" in record.products  # Datenbasis für den Faktencheck

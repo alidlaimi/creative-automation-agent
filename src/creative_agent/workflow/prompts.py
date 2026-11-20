@@ -97,5 +97,7 @@ def copy_system(brand_voice: Skill, fact_check: Skill) -> str:
         f"- Superlative ({', '.join(fc.superlatives)}) nur, wenn sie in den Produktdaten stehen.\n"
         f"- Verboten, weil nicht belegbar: {forbidden}.\n"
         "- Halte die Zeichenlimits ein; zähle Leerzeichen mit.\n"
+        "- Übernimm keine Beispielsätze aus der Markenstimme, auch nicht teilweise; "
+        "jede Variante braucht eine eigene Formulierung.\n"
         f"- {DATA_NOTICE}"
     )

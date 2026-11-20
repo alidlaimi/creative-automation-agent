@@ -15,6 +15,9 @@ class Settings(BaseSettings):
     anthropic_api_key: SecretStr | None = None
     anthropic_model: str = Field(default="claude-sonnet-5-5", min_length=1)
     anthropic_model_fast: str = Field(default="claude-haiku-5-5", min_length=1)
+    anthropic_model_judge: str = Field(default="claude-sonnet-5-5", min_length=1)
+    # Vorläufig, bis zur Kalibrierung (Meilenstein 8): Mittelwert der Rubrik (Skala 1–5)
+    judge_threshold: float = Field(default=3.5, ge=1, le=5)
 
     galaxus_mcp_url: str = "https://mcp.galaxus.ch"
     mcp_cache_ttl_seconds: int = 86400
