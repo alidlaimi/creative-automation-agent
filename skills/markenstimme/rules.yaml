@@ -15,6 +15,12 @@ verbotene_floskeln:
   - einzigartiges Erlebnis
   - Sie werden begeistert sein
 
+# Beispielsätze aus SKILL.md – das Gate stoppt Varianten, die sie (fast) wörtlich übernehmen
+beispiele_nicht_kopieren:
+  - "60 Stunden Akku. Das sind ziemlich viele Zugfahrten."
+  - "Der Zug ist laut. Dein Kopf muss es nicht sein."
+  - "Kabel statt Bluetooth: einstecken, fertig."
+
 rubrik:
   skala_min: 1
   skala_max: 5

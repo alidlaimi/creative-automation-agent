@@ -1,7 +1,7 @@
 ---
 name: markenstimme
 description: Tonalität für Werbetexte – Regeln, Beispiele, No-Gos und Bewertungsrubrik. Eigene Ableitung aus öffentlicher Galaxus-Kommunikation, ersetzbar durch echte Vorgaben.
-version: 1.0.0
+version: 1.0.1
 owner: Kreationsteam (Platzhalter)
 herkunft: Ableitung (nicht offiziell)
 ---
@@ -29,6 +29,9 @@ herkunft: Ableitung (nicht offiziell)
 - Kein Druck («Jetzt zuschlagen!»), keine künstliche Knappheit.
 
 ## Beispiele (eigene Formulierungen)
+Die Beispiele zeigen die **Haltung**, nicht den Wortlaut. **Nie wörtlich oder fast wörtlich übernehmen** –
+jede Variante braucht eine eigene Formulierung. Das Quality Gate prüft auf Übernahmen.
+
 **Gut**
 - «60 Stunden Akku. Das sind ziemlich viele Zugfahrten.» (konkret, belegbar, leicht selbstironisch)
 - «Der Zug ist laut. Dein Kopf muss es nicht sein.» (Blickwinkel der Zielgruppe, klarer Nutzen)

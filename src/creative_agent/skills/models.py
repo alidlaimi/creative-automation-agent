@@ -134,6 +134,7 @@ class BrandVoiceRules(Strict):
     forbidden_characters: list[str] = Field(alias="verbotene_zeichen")
     max_exclamation_marks: int = Field(alias="max_ausrufezeichen", ge=0)
     forbidden_phrases: list[str] = Field(alias="verbotene_floskeln")
+    examples_not_to_copy: list[str] = Field(default=[], alias="beispiele_nicht_kopieren")
     rubric: Rubric = Field(alias="rubrik")
 
 

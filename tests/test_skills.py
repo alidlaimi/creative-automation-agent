@@ -173,3 +173,11 @@ def test_invalid_yaml_is_reported(skill_copy):
     (skill_copy / "markenstimme" / "rules.yaml").write_text("anrede: [du", encoding="utf-8")
     with pytest.raises(SkillError, match="YAML"):
         load_skill(skill_copy / "markenstimme")
+
+
+def test_brand_voice_examples_are_in_skill_text():
+    """Die maschinenlesbaren Beispiele müssen dieselben sein wie in SKILL.md."""
+    skill = load_skill(SKILLS / "markenstimme")
+    assert skill.rules.examples_not_to_copy
+    for example in skill.rules.examples_not_to_copy:
+        assert f"«{example}»" in skill.instructions, example

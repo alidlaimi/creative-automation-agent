@@ -1,0 +1,6 @@
+{% extends "_rahmen.html.j2" %}
+{% import "_bausteine.html.j2" as b %}
+{% block inhalt %}
+  {{ b.produktbild(image_src, product_name) }}
+  {{ b.preis(price) }}
+{% endblock %}

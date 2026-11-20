@@ -1,0 +1,82 @@
+/* Eigenes, neutrales Design – kein Galaxus-Logo, keine Markenfarben. Thema über Variablen anpassbar. */
+:root {
+  --bg-1: #f4f1ea;
+  --bg-2: #e6dfd2;
+  --ink: #16161a;
+  --muted: #5b5b66;
+  --accent: #ff5a36;
+  --accent-ink: #ffffff;
+  --card: #ffffff;
+  --radius: 0.035;
+  --font: "Inter", "Helvetica Neue", Arial, "Liberation Sans", "DejaVu Sans", sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: transparent; }
+.canvas {
+  position: relative; overflow: hidden; font-family: var(--font); color: var(--ink);
+  width: var(--w); height: var(--h);
+}
+[data-block="hintergrund"] {
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 80% 15%, var(--bg-2), var(--bg-1) 60%);
+}
+/* sichere Zone: Innenabstände aus dem Skill kanalformate (Prozent der Kantenlänge) */
+.safe {
+  position: absolute;
+  top: calc(var(--h) * var(--safe-top) / 100);
+  bottom: calc(var(--h) * var(--safe-bottom) / 100);
+  left: calc(var(--w) * var(--safe-left) / 100);
+  right: calc(var(--w) * var(--safe-right) / 100);
+  display: flex; flex-direction: column;
+}
+[data-block="produktbild"] {
+  background: var(--card); border-radius: calc(var(--w) * var(--radius));
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+[data-block="produktbild"] img { max-width: 86%; max-height: 86%; object-fit: contain; }
+[data-block="produktname"] { color: var(--muted); font-weight: 600; letter-spacing: 0.01em;
+  white-space: nowrap; overflow: hidden; }
+[data-block="headline"] { font-weight: 800; line-height: 1.12; letter-spacing: -0.02em;
+  overflow: hidden; }
+/* Texte schrumpfen nie – nur das Produktbild passt sich an. Zu langer Text = Überlauf (Gate). */
+[data-block="produktname"], [data-block="headline"], .row { flex-shrink: 0; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 4%; }
+[data-block="preis"] { font-weight: 800; white-space: nowrap; }
+[data-block="cta"] {
+  background: var(--accent); color: var(--accent-ink); font-weight: 700; white-space: nowrap;
+  border-radius: 999px; overflow: hidden;
+}
+/* Hilfslinien für die Review: nicht sichere Bereiche rot markieren */
+.guide { position: absolute; background: rgba(255, 0, 0, 0.18); outline: 2px dashed rgba(200,0,0,.6); }
+
+/* ---------- Feed 4:5 ---------- */
+.feed .safe { padding: calc(var(--w) * 0.06); gap: calc(var(--h) * 0.025); }
+.feed [data-block="produktbild"] { flex: 0 0 56%; }
+.feed [data-block="produktname"] { font-size: calc(var(--w) * 0.03); }
+.feed [data-block="headline"] { font-size: calc(var(--w) * 0.068); max-height: 3.36em; }
+.feed .row { margin-top: auto; }
+.feed [data-block="preis"] { font-size: calc(var(--w) * 0.07); }
+.feed [data-block="cta"] { font-size: calc(var(--w) * 0.034); padding: 0.7em 1.4em; }
+
+/* ---------- Story 9:16 ---------- */
+.story .safe { gap: calc(var(--h) * 0.018); }
+/* Dekor in der unteren Zone: nur Form, keine Information (dort liegen die Meta-Bedienelemente) */
+.story [data-block="hintergrund"]::after {
+  content: ""; position: absolute; left: -20%; right: -20%; bottom: -12%; height: 42%;
+  background: var(--accent); opacity: 0.12; border-radius: 50% 50% 0 0;
+}
+.story [data-block="produktbild"] { flex: 1 1 auto; min-height: 0; }
+.story [data-block="produktname"] { font-size: calc(var(--w) * 0.034); }
+.story [data-block="headline"] { font-size: calc(var(--w) * 0.078); max-height: 3.36em; }
+.story [data-block="preis"] { font-size: calc(var(--w) * 0.08); }
+.story [data-block="cta"] { font-size: calc(var(--w) * 0.04); padding: 0.7em 1.4em; }
+
+/* ---------- Banner 1.91:1 (Textanteil max. 20 %) ---------- */
+.banner .safe { flex-direction: row; align-items: center; justify-content: center; }
+.banner [data-block="produktbild"] { width: 70%; height: 86%; background: transparent; }
+.banner [data-block="produktbild"] img { max-width: 100%; max-height: 100%; }
+.banner [data-block="preis"] {
+  position: absolute; right: 0; bottom: 6%;
+  font-size: calc(var(--h) * 0.075); background: var(--card); padding: 0.25em 0.6em;
+  border-radius: 999px;
+}

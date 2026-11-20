@@ -1,0 +1,8 @@
+{# Bausteine: jedes Element trägt data-block, damit der Messbericht es findet. #}
+{% macro produktbild(src, alt) -%}
+<figure data-block="produktbild"><img src="{{ src }}" alt="{{ alt }}"></figure>
+{%- endmacro %}
+{% macro produktname(text) -%}<div data-block="produktname">{{ text }}</div>{%- endmacro %}
+{% macro headline(text) -%}<h1 data-block="headline">{{ text }}</h1>{%- endmacro %}
+{% macro preis(text) -%}<div data-block="preis">{{ text }}</div>{%- endmacro %}
+{% macro cta(text) -%}<div data-block="cta">{{ text }}</div>{%- endmacro %}

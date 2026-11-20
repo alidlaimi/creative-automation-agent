@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<style>{% include "layouts.css" %}</style></head>
+<body>
+<div class="canvas {{ layout }}" style="--w: {{ w }}px; --h: {{ h }}px; --safe-top: {{ safe.top }}; --safe-bottom: {{ safe.bottom }}; --safe-left: {{ safe.left }}; --safe-right: {{ safe.right }};">
+  <div data-block="hintergrund"></div>
+  <div class="safe">{% block inhalt %}{% endblock %}</div>
+  {% if show_guides %}
+    {% if safe.top %}<div class="guide" style="left:0;right:0;top:0;height:{{ safe.top }}%"></div>{% endif %}
+    {% if safe.bottom %}<div class="guide" style="left:0;right:0;bottom:0;height:{{ safe.bottom }}%"></div>{% endif %}
+    {% if safe.left %}<div class="guide" style="top:0;bottom:0;left:0;width:{{ safe.left }}%"></div>{% endif %}
+    {% if safe.right %}<div class="guide" style="top:0;bottom:0;right:0;width:{{ safe.right }}%"></div>{% endif %}
+  {% endif %}
+</div>
+</body></html>
