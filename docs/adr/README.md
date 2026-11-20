@@ -11,3 +11,4 @@ Neue ADR: `docs/adr/NNNN-titel.md` nach Vorlage [0000-vorlage.md](0000-vorlage.m
 | 0004 | [Workflow: agentische Recherche, strukturiertes Texten](0004-agentic-workflow.md) | vorgeschlagen |
 | 0005 | [Layouts als HTML/CSS, gerendert mit Playwright](0005-rendering-html-playwright.md) | vorgeschlagen |
 | 0006 | [Quality Gate: Regeln vor Modell, Ampel mit Begründung](0006-quality-gate.md) | vorgeschlagen |
+| 0007 | [Review mit Freigaberegeln, Export nur von Freigegebenem](0007-review-und-export.md) | vorgeschlagen |

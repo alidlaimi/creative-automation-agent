@@ -1,0 +1,8 @@
+# Projektweite Streamlit-Einstellungen
+[server]
+# Kein automatisches Öffnen des Browsers (in WSL nicht möglich) – URL von Hand öffnen
+headless = true
+
+[browser]
+# Keine Nutzungsstatistik an Streamlit senden
+gatherUsageStats = false
