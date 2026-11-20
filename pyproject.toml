@@ -5,8 +5,10 @@ description = "Private Arbeitsprobe: Creative-Automation-Agent mit Quality Gate 
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "anthropic>=2.11.0",
     "mcp>=2.3.0",
     "pydantic>=2.7",
+    "pydantic-settings>=2",
     "pyyaml>=6",
 ]
 
@@ -26,7 +28,7 @@ packages = ["src/creative_agent"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["src"]
+pythonpath = ["src", "tests"]
 
 [tool.ruff]
 line-length = 100

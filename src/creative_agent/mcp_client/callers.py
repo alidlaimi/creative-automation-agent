@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any, Protocol
 
 from mcp import Client
+from mcp.client.streamable_http import streamable_http_client
 
 
 class MCPToolError(RuntimeError):
@@ -37,8 +38,11 @@ class LiveToolCaller:
         self.timeout_seconds = timeout_seconds
 
     async def __call__(self, tool: str, arguments: dict[str, Any]) -> str:
+        # terminate_on_close=False: Der Galaxus-Server beantwortet das Sitzungsende (DELETE)
+        # mit 501 Not Implemented – die Anfrage wäre nutzlos und erzeugt nur eine Warnung.
+        transport = streamable_http_client(self.server_url, terminate_on_close=False)
         async with Client(
-            self.server_url, mode=self.mode, read_timeout_seconds=self.timeout_seconds
+            transport, mode=self.mode, read_timeout_seconds=self.timeout_seconds
         ) as client:
             result = await client.call_tool(tool, arguments)
         if result.is_error:
