@@ -42,3 +42,8 @@ die Oberfläche zeigt nur an und ruft auf – ein späterer Wechsel betrifft nur
 - Kennzahlen in der Oberfläche: Freigabequote, Kosten pro Variante (inkl. Markenstimme-Bewertung),
   Laufzeit des Agenten, Zeit Briefing → letzte Freigabe.
 - Für echten Betrieb fehlen Anmeldung, Rollen und Mehrbenutzer-Sperren – bewusst ausserhalb des Umfangs.
+
+## Nachtrag (2026-11-24): Test der Oberfläche
+Der Ablauf «Freigabe → Export enthält nur Freigegebenes, Rot gesperrt» wird mit Streamlits
+`AppTest` geprüft statt mit Playwright im Browser: gleiche Abdeckung der Logik, kein Browser und
+kein laufender Server nötig, stabil in der CI. Playwright bleibt für das Rendering der Layouts.

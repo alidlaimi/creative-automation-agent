@@ -1,0 +1,35 @@
+name: Eval (manuell, echtes Modell)
+
+# Nur von Hand auslösbar: kostet Geld und ruft die Galaxus-Schnittstelle live auf.
+on:
+  workflow_dispatch:
+    inputs:
+      budget:
+        description: "Gesamtbudget in USD"
+        required: true
+        default: "3"
+
+permissions:
+  contents: read
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.4.0
+      - run: uv sync --frozen
+      - run: uv run playwright install --with-deps chromium
+      - name: Eval-Lauf
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: uv run python -m creative_agent.evaluation lauf --budget "${{ inputs.budget }}"
+      - name: Bericht
+        run: |
+          EVAL_ID=$(ls output/evals | sed 's/\.json$//' | sort | tail -1)
+          uv run python -m creative_agent.evaluation bericht "$EVAL_ID"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eval-bericht
+          path: eval/reports/

@@ -269,3 +269,25 @@ def test_review_app_renders_run(run, monkeypatch):
     assert at.metric[0].value == str(len(record.variants))
     labels = [b.label for b in at.button]
     assert labels.count("Freigeben") == len(record.variants)
+
+
+def test_review_app_approval_flow_exports_only_approved(run, monkeypatch):
+    """Oberfläche: Freigabe mit Begründung → Export enthält nur die freigegebene Variante."""
+    from streamlit.testing.v1 import AppTest
+
+    _, _, run_dir = run
+    monkeypatch.setenv("CAA_RUNS_DIR", str(run_dir.parent))
+    at = AppTest.from_file(str(ROOT / "src/creative_agent/review/app.py"), default_timeout=30)
+    at.run()
+    vid = "meta_feed-z1-1"
+    at.text_input(key=f"{vid}-reason").input("Layout geprüft")
+    at.button(key=f"{vid}-ok").click()
+    at.run()
+    assert not at.exception, at.exception
+    red = "meta_feed-z1-2"
+    assert at.button(key=f"{red}-ok").disabled  # rot: Freigeben gesperrt
+    next(b for b in at.button if b.label == "Export erstellen").click()
+    at.run()
+    assert at.session_state["export"]["variant_ids"] == [vid]
+    review = json.loads((run_dir / "review.json").read_text("utf-8"))
+    assert review["variants"][vid]["decision"]["reason"] == "Layout geprüft"

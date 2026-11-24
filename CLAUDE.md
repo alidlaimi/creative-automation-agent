@@ -48,12 +48,12 @@ Basiert auf der öffentlichen Galaxus-MCP-Schnittstelle. **Nicht offiziell von G
   - `output/` – lokale Laufergebnisse (ignoriert)
 
 ## Meilensteine
-- [ ] 1. Repository-Struktur, CLAUDE.md, .env.example, README-Gerüst, erste ADR
-- [ ] 2. MCP-Anbindung: Server/Tools aus offiziellen Quellen, Produktsuche, Normalisierung, Cache, Fixtures
-- [ ] 3. Skills mit Versionierung, Validierung, Quellenpflicht; Limits gegen offizielle Quellen geprüft
-- [ ] 4. Agentic Workflow: Briefing → Produkte → Textvarianten (strukturierte Ausgabe, Budgets)
-- [ ] 5. Layouts: Bausteine, drei Formate, Playwright-Rendering
-- [ ] 6. Quality Gate mit Ampel und Begründung
-- [ ] 7. Review-Oberfläche + Export
-- [ ] 8. Testset, Negativtests, Kalibrierung, Eval-Bericht
-- [ ] 9. Playbook, Governance, Tests, CI, Docker, README fertig
+- [x] 1. Repository-Struktur, CLAUDE.md, .env.example, README-Gerüst, erste ADR
+- [x] 2. MCP-Anbindung: Server/Tools aus offiziellen Quellen, Produktsuche, Normalisierung, Cache, Fixtures
+- [x] 3. Skills mit Versionierung, Validierung, Quellenpflicht; Limits gegen offizielle Quellen geprüft
+- [x] 4. Agentic Workflow: Briefing → Produkte → Textvarianten (strukturierte Ausgabe, Budgets)
+- [x] 5. Layouts: Bausteine, drei Formate, Playwright-Rendering
+- [x] 6. Quality Gate mit Ampel und Begründung
+- [x] 7. Review-Oberfläche + Export
+- [x] 8. Testset, Negativtests, Kalibrierung, Eval-Bericht
+- [x] 9. Playbook, Governance, Tests, CI, Docker, README fertig
