@@ -140,15 +140,15 @@ def test_old_check_date_gives_hint_not_error():
 
 
 def test_version_must_be_semver(skill_copy):
-    _edit(skill_copy / "faktencheck" / "SKILL.md", "version: 1.0.0", "version: neu")
+    _edit(skill_copy / "kanalformate" / "SKILL.md", "version: 1.0.0", "version: neu")
     with pytest.raises(SkillError, match="Version"):
-        load_skill(skill_copy / "faktencheck")
+        load_skill(skill_copy / "kanalformate")
 
 
 def test_version_needs_changelog_entry(skill_copy):
-    _edit(skill_copy / "faktencheck" / "SKILL.md", "version: 1.0.0", "version: 1.1.0")
+    _edit(skill_copy / "kanalformate" / "SKILL.md", "version: 1.0.0", "version: 1.1.0")
     with pytest.raises(SkillError, match="CHANGELOG"):
-        load_skill(skill_copy / "faktencheck")
+        load_skill(skill_copy / "kanalformate")
 
 
 def test_content_hash_changes_with_rules(skill_copy):

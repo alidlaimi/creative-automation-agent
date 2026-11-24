@@ -5,7 +5,7 @@
 #
 # Produkte: 61276930 Sennheiser Momentum 4 Wireless, CHF 139, «ANC, 60 h», 4.5 (843)
 #           76213675 Bose Noise Cancelling Wired, CHF 96.80 (gleichnamige Variante 76213669: CHF 99)
-version: 1.0.0
+version: 1.1.0
 faelle:
   # ---------- Kontrollfälle: dürfen NICHT rot sein ----------
   - id: k01_sauber_feed
@@ -25,6 +25,27 @@ faelle:
     kanal: meta_feed
     produkt: "61276930"
     felder: {primaertext: "60 Stunden Akku und ANC: genug für viele Zugfahrten zur Uni.", ueberschrift: "Ruhe im Zug", cta: "Ansehen"}
+    erwartet: {status: [gruen, gelb]}
+  # Aus Eval 20261124-0849: dort fälschlich rot (Fehlalarme), seit faktencheck 1.0.1 behoben
+  - id: k04_produktname_mit_verbotswort
+    beschreibung: Produktname enthält «Express» (kein Lieferversprechen)
+    kanal: meta_feed
+    produkt: "61276930"
+    produkt_name: "Barista Express"
+    felder: {primaertext: "Barista Express: frisch gemahlen statt Kapsel, für deine Küche.", ueberschrift: "Frisch gemahlen", cta: "Ansehen"}
+    erwartet: {status: [gruen, gelb]}
+  - id: k05_redewendung_nur_noch
+    beschreibung: «nur noch» als Redewendung, nicht als Knappheit
+    kanal: meta_feed
+    produkt: "61276930"
+    felder: {primaertext: "60 h Akku und ANC: Du musst nur noch die Playlist für die Zugfahrt wählen.", ueberschrift: "Ruhe im Zug", cta: "Ansehen"}
+    erwartet: {status: [gruen, gelb]}
+  - id: k06_zahlwort_als_beleg
+    beschreibung: Produktdaten sagen «drei Brenner», der Text «3 Brenner»
+    kanal: meta_feed
+    produkt: "61276930"
+    produkt_beschreibung: "Gasgrill mit drei Edelstahlbrennern."
+    felder: {primaertext: "3 Brenner und genug Platz für den ganzen Freundeskreis beim Grillen.", ueberschrift: "Grillen mit Platz", cta: "Ansehen"}
     erwartet: {status: [gruen, gelb]}
 
   # ---------- Fehlerfälle: müssen rot sein, mit der erwarteten Regel ----------

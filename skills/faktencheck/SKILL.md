@@ -1,7 +1,7 @@
 ---
 name: faktencheck
 description: Welche Angaben in Werbetexten belegt sein müssen und welche Aussagen verboten sind. Grundlage für den deterministischen Faktencheck im Quality Gate.
-version: 1.0.0
+version: 1.0.1
 owner: Kreationsteam (Platzhalter)
 ---
 

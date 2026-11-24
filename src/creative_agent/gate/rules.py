@@ -17,6 +17,7 @@ from .text import (
     term_pattern,
     to_decimal,
     unit_pattern,
+    word_numbers,
     words,
 )
 
@@ -220,6 +221,13 @@ def _evidence(product: Product, fields: list[str]) -> str:
     return normalize(" | ".join(parts[f] for f in fields if parts.get(f)))
 
 
+def _without_name(text: str, product: Product) -> str:
+    """Produktname und Marke ausblenden: «Barista Express» ist kein Lieferversprechen."""
+    for part in sorted(filter(None, [product.name, product.brand]), key=len, reverse=True):
+        text = re.sub(re.escape(normalize(part)), " ", text, flags=re.IGNORECASE)
+    return text
+
+
 def check_facts(variant: Variant, product: Product, skill: Skill) -> list[Finding]:
     rules: FactCheckRules = skill.rules
     tag = f"faktencheck {skill.version}"
@@ -231,7 +239,7 @@ def check_facts(variant: Variant, product: Product, skill: Skill) -> list[Findin
     name_text = " ".join(x for x in (product.brand, product.name) if x)
     units = unit_pattern(rules.units)
     evidence_units = {(v, u) for v, u, _ in find_unit_values(evidence, units)}
-    evidence_numbers = numbers(evidence) | numbers(name_text)
+    evidence_numbers = numbers(evidence) | numbers(name_text) | word_numbers(evidence)
     rating_numbers = set()
     if product.rating:
         rating_numbers = {
@@ -302,8 +310,9 @@ def check_facts(variant: Variant, product: Product, skill: Skill) -> list[Findin
             )
 
         # Superlative nur mit Beleg
+        claim_text = _without_name(text, product)
         for term in rules.superlatives:
-            if term_pattern(term).search(text) and not term_pattern(term).search(evidence):
+            if term_pattern(term).search(claim_text) and not term_pattern(term).search(evidence):
                 findings.append(
                     Finding(
                         rule="superlativ",
@@ -316,7 +325,7 @@ def check_facts(variant: Variant, product: Product, skill: Skill) -> list[Findin
 
         # Verbotene Aussagen (nie belegbar)
         for claim in rules.forbidden_claims:
-            hits = [t for t in claim.terms if term_pattern(t).search(text)]
+            hits = [t for t in claim.terms if term_pattern(t).search(claim_text)]
             if hits:
                 findings.append(
                     Finding(

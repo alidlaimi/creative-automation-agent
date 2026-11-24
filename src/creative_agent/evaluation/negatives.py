@@ -42,6 +42,8 @@ async def run_case(
     product = products[case.produkt]
     if case.produkt_beschreibung is not None:
         product = product.model_copy(update={"description": case.produkt_beschreibung})
+    if case.produkt_name is not None:
+        product = product.model_copy(update={"name": case.produkt_name})
     variant = Variant(
         variant_id=case.id,
         channel=case.kanal,

@@ -32,7 +32,7 @@ verbotene_aussagen:
     begriffe: [Rabatt, Aktion, Sale, reduziert, Deal, Schnäppchen, Gutschein, Sparen, sparst, "% günstiger", "statt CHF", Black Friday, Cyber Monday, Ausverkauf]
   - kategorie: verfuegbarkeit
     begruendung: Die Schnittstelle liefert keinen Lagerbestand.
-    begriffe: [an Lager, sofort lieferbar, sofort verfügbar, nur noch, solange Vorrat, ausverkauft, Restposten]
+    begriffe: [an Lager, sofort lieferbar, sofort verfügbar, nur noch wenige, nur noch heute, nur noch kurz, nur noch bis, solange Vorrat, ausverkauft, Restposten, letzte Exemplare]
   - kategorie: lieferung
     begruendung: Die Schnittstelle liefert keine Lieferzeiten oder Versandkonditionen.
     begriffe: [morgen bei dir, Lieferung morgen, heute bestellt, Gratisversand, gratis Versand, versandkostenfrei, kostenloser Versand, Express]

@@ -35,7 +35,7 @@ def _num(x) -> str:
 
 
 def previous_summary(current_id: str) -> tuple[str, dict] | None:
-    files = sorted(p for p in REPORTS.glob("*.json") if p.stem != current_id)
+    files = sorted(p for p in REPORTS.glob("*.json") if p.stem < current_id)
     if not files:
         return None
     data = json.loads(files[-1].read_text("utf-8"))
@@ -72,7 +72,7 @@ def build_report(
         "|---|---|---|",
         f"| Faktenfehler, die eine menschliche Sichtung erreichen | "
         f"**{s.fact_errors_not_red}** | 0 |",
-        f"| Varianten mit Faktenfehler, wie generiert (vom Gate gestoppt) | "
+        f"| Varianten mit Fakten-Meldung des Gates (rot; echt oder Fehlalarm: siehe Befunde) | "
         f"{s.fact_error_variants} von {s.variants} | möglichst 0 |",
         f"| Negativtests vom Gate gestoppt | **{sum(n.passed for n in errors)} / {len(errors)}** | "
         "alle |",
@@ -91,7 +91,12 @@ def build_report(
         f"| Freigabequote Review | {_pct(s.approval_rate)} ({s.reviewed_variants} beurteilt) | – |",
         f"| Zeit Briefing → Freigabe | Median {_num(s.minutes_to_approval_median)} min | – |",
         "",
-        f"Läufe: {s.runs_ok} von {s.runs} ohne Abbruch"
+        f"Briefings: {s.runs} von {len(briefings)} ausgewertet, {s.runs_ok} ohne Abbruch"
+        + (
+            f" · fehlend: {', '.join(sorted(set(briefings) - set(index.runs)))}"
+            if set(briefings) - set(index.runs)
+            else ""
+        )
         + (f" · Abbruch: {index.stopped_reason}" if index.stopped_reason else "")
         + ".",
         "",
@@ -115,6 +120,9 @@ def build_report(
                 mark = "✅" if (b > a) == (better == "mehr") else "⚠️"
             lines.append(f"| {label} | {_num(a)} | {_num(b)} | {mark} |")
         lines.append("")
+    befunde = REPORTS / f"{index.eval_id}.befunde.md"
+    if befunde.exists():
+        lines += ["## Befunde (manuelle Prüfung)", "", befunde.read_text("utf-8").strip(), ""]
     lines += [
         "## Je Briefing",
         "",
@@ -141,6 +149,8 @@ def build_report(
     lines += [
         "",
         "## Negativtests",
+        "",
+        "Stand des Codes und der Skills bei Erstellung dieses Berichts.",
         "",
         "| Fall | Erwartet | Ergebnis | Regeln | |",
         "|---|---|---|---|---|",

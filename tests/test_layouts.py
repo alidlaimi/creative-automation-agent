@@ -193,3 +193,34 @@ def test_preloaded_image_is_embedded():
     data_uri = "data:image/jpeg;base64,AAAA"
     html = compose_html(layout_spec(CHANNELS["meta_feed"]), variant(), PRODUCT, image_src=data_uri)
     assert data_uri in html and "galaxus.ch/productimages" not in html
+
+
+def test_render_run_without_image_channel_does_not_crash(tmp_path, monkeypatch):
+    """Eval 20261124-0849: Briefing nur mit Suchanzeige brach beim Schreiben des Berichts ab."""
+    from creative_agent.layouts import __main__ as cli
+
+    class NoBrowser:
+        async def __aenter__(self):
+            return self
+
+        async def __aexit__(self, *exc):
+            return None
+
+    monkeypatch.setattr(cli, "RUNS", tmp_path)
+    monkeypatch.setattr(cli, "LayoutRenderer", NoBrowser)
+    rsa = Variant(
+        variant_id="r1",
+        channel="google_ads_rsa",
+        target_group="x",
+        product_id=PRODUCT.id,
+        idea="",
+        fields={"titel": ["a", "b", "c"]},
+    )
+
+    class Rec:
+        run_id = "lauf"
+        variants = [rsa]
+        products = {PRODUCT.id: PRODUCT}
+
+    assert asyncio.run(cli.render_run(Rec(), guides=False, placeholder=True)) == []
+    assert (tmp_path / "lauf" / "assets" / "layout_report.json").exists()

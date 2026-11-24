@@ -1,0 +1,69 @@
+{
+  "eval_id": "20261124-0849",
+  "index": {
+    "eval_id": "20261124-0849",
+    "started_at": "2026-11-24T08:49:37.237719Z",
+    "briefing_set_version": "1.0.0",
+    "git_commit": "1a368b5",
+    "git_dirty": false,
+    "prompt_hash": "452e6884c14a",
+    "skills": {
+      "faktencheck": "1.0.0 (3abdcb64ef61)",
+      "kanalformate": "1.0.0 (8d7c231415b3)",
+      "markenstimme": "1.0.1 (b0b9534571ea)"
+    },
+    "models": {
+      "texte_recherche": "claude-sonnet-5-5",
+      "briefing": "claude-haiku-5-5",
+      "markenstimme": "claude-sonnet-5-5"
+    },
+    "judge_threshold": 2.25,
+    "budget_usd": 3.0,
+    "runs": {
+      "b01": "20261124-084957-05b871",
+      "b02": "20261124-085111-b08506",
+      "b03": "20261124-085220-9a0a03",
+      "b04": "20261124-085303-80e98a",
+      "b05": "20261124-085445-b81994",
+      "b06": "20261124-085533-d30281",
+      "b07": "20261124-085649-f946d9",
+      "b08": "20261124-085731-aadc59",
+      "b09": "20261124-085835-e5f3b7",
+      "b10": "20261124-085952-af0a66",
+      "b11": "20261124-090055-f5009b",
+      "b13": "20261124-090225-62cfc5",
+      "b14": "20261124-090434-20c986",
+      "b15": "20261124-090642-8878c6"
+    },
+    "stopped_reason": null
+  },
+  "summary": {
+    "runs": 14,
+    "runs_ok": 14,
+    "variants": 48,
+    "green": 45,
+    "yellow": 0,
+    "red": 3,
+    "fact_error_variants": 3,
+    "fact_errors_not_red": 0,
+    "format_ok_share": 1.0,
+    "judge_mean": 3.39,
+    "judge_pass_share": 1.0,
+    "copied_example_variants": 0,
+    "cost_total_usd": 1.5477,
+    "cost_per_variant_usd": 0.0322,
+    "duration_median_s": 41.1,
+    "duration_max_s": 79.8,
+    "approval_rate": null,
+    "reviewed_variants": 0,
+    "minutes_to_approval_median": null
+  },
+  "calibration": {
+    "threshold": 2.25,
+    "agreement": 0.85,
+    "kappa": 0.483,
+    "false_pass": 1,
+    "false_block": 2
+  },
+  "negatives_passed": "22/22"
+}

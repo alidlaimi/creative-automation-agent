@@ -69,6 +69,26 @@ def find_unit_values(text: str, pattern: re.Pattern) -> list[tuple[Decimal, str,
     return found
 
 
+NUMBER_WORDS = {
+    "zwei": 2,
+    "drei": 3,
+    "vier": 4,
+    "fünf": 5,
+    "sechs": 6,
+    "sieben": 7,
+    "acht": 8,
+    "neun": 9,
+    "zehn": 10,
+    "elf": 11,
+    "zwölf": 12,
+}  # «ein/eine» bewusst nicht: zu mehrdeutig
+
+
+def word_numbers(text: str) -> set[Decimal]:
+    """Zahlwörter im Beleg («drei Brenner» belegt «3 Brenner»)."""
+    return {Decimal(NUMBER_WORDS[w]) for w in words(text) if w in NUMBER_WORDS}
+
+
 def numbers(text: str) -> set[Decimal]:
     return {d for d in (to_decimal(n) for n in NUMBER.findall(normalize(text))) if d is not None}
 

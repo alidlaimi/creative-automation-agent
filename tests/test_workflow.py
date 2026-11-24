@@ -254,7 +254,7 @@ def test_full_run_produces_variants_and_protocol():
         "meta_feed-z1-2",
     ]
     assert {s.name: s.version for s in record.skills} == {
-        "faktencheck": "1.0.0",
+        "faktencheck": "1.0.1",
         "kanalformate": "1.0.0",
         "markenstimme": "1.0.1",
     }

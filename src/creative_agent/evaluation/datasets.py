@@ -49,6 +49,7 @@ class NegativeCase(_Strict):
     kanal: str
     produkt: str
     produkt_beschreibung: str | None = None
+    produkt_name: str | None = None
     felder: dict[str, str | list[str]]
     erwartet: Expectation
 

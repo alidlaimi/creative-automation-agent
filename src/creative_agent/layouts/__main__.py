@@ -22,6 +22,7 @@ RUNS = ROOT / "output" / "runs"
 async def render_run(record: RunRecord, guides: bool, placeholder: bool) -> list[dict]:
     channels = load_skills(ROOT / "skills")["kanalformate"].rules.channels
     out_dir = RUNS / record.run_id / "assets"
+    out_dir.mkdir(parents=True, exist_ok=True)  # auch ohne Bildkanal (z.B. nur Suchanzeige)
     reports = []
     fetcher = ImageFetcher(ROOT / "data" / "cache" / "images")
     async with LayoutRenderer() as renderer:
