@@ -1,0 +1,29 @@
+# Kalibrierung der Markenstimme-Bewertung: 20 Feed-Texte zu echten Produkten (Fixtures).
+# Bewusst unterschiedliche Qualität. Alle bestehen die deterministischen Regeln – kalibriert wird
+# nur, was die Regeln nicht entscheiden. Eigene Formulierungen, keine echten Galaxus-Anzeigen.
+#
+# Produkte: 61276930 Sennheiser Momentum 4 Wireless (CHF 139, ANC, 60 h, 4.5 / 843)
+#           38631244 Bose QuietComfort (CHF 159, ANC, 24 h, kabelgebunden und kabellos)
+#           76213669 Bose Noise Cancelling Wired (CHF 99, ANC, kabelgebunden)
+version: 1.0.0
+texte:
+  - {id: t01, kanal: meta_feed, produkt: "61276930", zielgruppe: Studierende, felder: {primaertext: "Vorlesung um acht, Zug um sieben. 60 h Akku und ANC machen den Morgen leiser.", ueberschrift: "Leiser in den Tag", cta: "Ansehen"}}
+  - {id: t02, kanal: meta_feed, produkt: "38631244", zielgruppe: Studierende, felder: {primaertext: "Erlebe Musik neu mit ANC und 24 h Akku. Für alle, die Musik lieben.", ueberschrift: "Musik neu erleben", cta: "Ansehen"}}
+  - {id: t03, kanal: meta_feed, produkt: "76213669", zielgruppe: Studierende, felder: {primaertext: "Die Implementierung aktiver Geräuschunterdrückung ermöglicht eine Reduktion von Umgebungsgeräuschen per Kabelverbindung.", ueberschrift: "ANC-Technologie", cta: "Mehr erfahren"}}
+  - {id: t04, kanal: meta_feed, produkt: "38631244", zielgruppe: Studierende, felder: {primaertext: "Prüfungsphase im Grossraum? ANC dreht die Gespräche am Nebentisch leiser.", ueberschrift: "Lernen im Lärm", cta: "Ansehen"}}
+  - {id: t05, kanal: meta_feed, produkt: "61276930", zielgruppe: Studierende, felder: {primaertext: "Kopfhörer mit ANC und 60 h Akku. Ideal für Pendler und Studierende.", ueberschrift: "Kopfhörer mit ANC", cta: "Ansehen"}}
+  - {id: t06, kanal: meta_feed, produkt: "76213669", zielgruppe: Studierende, felder: {primaertext: "Bluetooth-Kopplung, die wieder nicht klappt? Hier gibt es keine. Kabel rein, ANC an.", ueberschrift: "Kein Koppeln nötig", cta: "Ansehen"}}
+  - {id: t07, kanal: meta_feed, produkt: "61276930", zielgruppe: Studierende, felder: {primaertext: "Premium-Sound auf höchstem Niveau für höchste Ansprüche: ANC und 60 h Akku.", ueberschrift: "Sound auf Topniveau", cta: "Jetzt entdecken"}}
+  - {id: t08, kanal: meta_feed, produkt: "38631244", zielgruppe: Studierende, felder: {primaertext: "Pendeln wird nicht kürzer. Aber mit ANC und 24 h Akku fühlt es sich so an.", ueberschrift: "Gefühlt kürzer", cta: "Ansehen"}}
+  - {id: t09, kanal: meta_feed, produkt: "76213669", zielgruppe: Studierende, felder: {primaertext: "Guter Klang, ANC und Kabel. Ein solider Kopfhörer für den Alltag.", ueberschrift: "Solider Begleiter", cta: "Ansehen"}}
+  - {id: t10, kanal: meta_feed, produkt: "61276930", zielgruppe: Studierende, felder: {primaertext: "Endlich Ruhe vor den nervigen Mitpendlern und ihren Telefonaten. 60 h Akku, ANC.", ueberschrift: "Tschüss, Telefonate", cta: "Ansehen"}}
+  - {id: t11, kanal: meta_feed, produkt: "38631244", zielgruppe: Studierende, felder: {primaertext: "Unser Sortiment bietet eine grosse Auswahl. Dieser Kopfhörer hat ANC und 24 h Akku.", ueberschrift: "Grosse Auswahl", cta: "Mehr erfahren"}}
+  - {id: t12, kanal: meta_feed, produkt: "61276930", zielgruppe: Studierende, felder: {primaertext: "60 h Akku: Du lädst ihn seltener, als du deine Wäsche machst. Dazu ANC für den Zug.", ueberschrift: "Laden? Selten.", cta: "Ansehen"}}
+  - {id: t13, kanal: meta_feed, produkt: "76213669", zielgruppe: Studierende, felder: {primaertext: "Sound, der dich packt. Bass, der dich trägt. Ruhe, die dich hält. ANC per Kabel.", ueberschrift: "Spür den Sound", cta: "Ansehen"}}
+  - {id: t14, kanal: meta_feed, produkt: "38631244", zielgruppe: Studierende, felder: {primaertext: "Die Bibliothek ist voll, dein Kopf bleibt ruhig: ANC, mit Kabel oder kabellos, 24 h Akku.", ueberschrift: "Ruhe zum Lernen", cta: "Ansehen"}}
+  - {id: t15, kanal: meta_feed, produkt: "61276930", zielgruppe: Studierende, felder: {primaertext: "Sennheiser Momentum 4 Wireless mit ANC, 60 h Akku, kabelgebunden und kabellos nutzbar.", ueberschrift: "Momentum 4 Wireless", cta: "Ansehen"}}
+  - {id: t16, kanal: meta_feed, produkt: "38631244", zielgruppe: Studierende, felder: {primaertext: "Hol dir jetzt die QuietComfort und geniesse deine Musik überall, wo du willst.", ueberschrift: "Jetzt holen", cta: "Jetzt kaufen"}}
+  - {id: t17, kanal: meta_feed, produkt: "76213669", zielgruppe: Studierende, felder: {primaertext: "Kein Akku, kein Laden, kein Drama. ANC per Kabel, für CHF 99.–.", ueberschrift: "Ohne Akku ruhig", cta: "Ansehen"}}
+  - {id: t18, kanal: meta_feed, produkt: "61276930", zielgruppe: Studierende, felder: {primaertext: "Für Menschen, die Wert auf Qualität legen: ANC und 60 h Akku von Sennheiser.", ueberschrift: "Qualität von Sennheiser", cta: "Mehr erfahren"}}
+  - {id: t19, kanal: meta_feed, produkt: "38631244", zielgruppe: Studierende, felder: {primaertext: "Wenn du Kopfhörer brauchst, sind das Kopfhörer. ANC und 24 h Akku sind dabei.", ueberschrift: "Das sind Kopfhörer", cta: "Ansehen"}}
+  - {id: t20, kanal: meta_feed, produkt: "61276930", zielgruppe: Studierende, felder: {primaertext: "4.5 Sterne aus 843 Bewertungen. Und 60 h Akku für deinen Pendelweg, mit ANC.", ueberschrift: "843 Meinungen", cta: "Ansehen"}}

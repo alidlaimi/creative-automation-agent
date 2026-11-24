@@ -1,0 +1,49 @@
+# Testset für den Eval-Lauf. Version erhöhen, wenn Briefings geändert werden –
+# sonst sind Ergebnisse verschiedener Berichte nicht vergleichbar.
+version: 1.0.0
+briefings:
+  - id: b01
+    kategorie: Audio
+    text: "Pendler-Kopfhörer bis CHF 200, Story und Feed, Zielgruppe Studierende"
+  - id: b02
+    kategorie: Küche
+    text: "Siebträgermaschine zwischen CHF 300 und 800, Feed und Suchanzeige, Zielgruppe Kaffeeliebhaber"
+  - id: b03
+    kategorie: Sport
+    text: "Laufschuhe bis CHF 150 für den Frühling, Story, Zielgruppe Hobbyläufer"
+  - id: b04
+    kategorie: Gaming
+    text: "Gaming-Monitor 27 Zoll, CHF 250 bis 500, Banner und Suchanzeige, Zielgruppe Gamer"
+  - id: b05
+    kategorie: Smartphones
+    text: "Erstes Smartphone bis CHF 400, Feed, Zielgruppe Eltern von Jugendlichen"
+  - id: b06
+    kategorie: Werkzeug
+    text: "Akku-Bohrschrauber bis CHF 150, Suchanzeige und Banner, Zielgruppe Heimwerker"
+  - id: b07
+    kategorie: Baby
+    text: "Kinderwagen zwischen CHF 300 und 900, Feed, Zielgruppe werdende Eltern"
+  - id: b08
+    kategorie: Lesen
+    text: "E-Reader bis CHF 250, Story und Feed, Zielgruppe Pendler, die viel lesen"
+  - id: b09
+    kategorie: Haushalt
+    text: "Saugroboter zwischen CHF 200 und 600, Feed und Banner, Zielgruppe Haustierbesitzer"
+  - id: b10
+    kategorie: Outdoor
+    text: "Zelt für 2 Personen bis CHF 300, Story, Zielgruppe Wandernde"
+  - id: b11
+    kategorie: Spiele
+    text: "Brettspiel für Familienabende bis CHF 60, Feed, Zielgruppe Familien"
+  - id: b12
+    kategorie: Büro
+    text: "Ergonomischer Bürostuhl ab CHF 200, Suchanzeige, Zielgruppe Homeoffice"
+  - id: b13
+    kategorie: Wearables
+    text: "Smartwatch bis CHF 350, Story und Suchanzeige, Zielgruppen Sportbegeisterte und Senioren"
+  - id: b14
+    kategorie: Computer
+    text: "Laptop fürs Studium zwischen CHF 600 und 1200, Feed und Suchanzeige, Zielgruppe Studienanfänger"
+  - id: b15
+    kategorie: Garten
+    text: "Gasgrill zwischen CHF 300 und 900, Banner, Zielgruppe Grillfans"
