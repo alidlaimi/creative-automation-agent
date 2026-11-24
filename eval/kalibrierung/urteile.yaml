@@ -1,0 +1,63 @@
+# Menschliche Urteile zur Markenstimme (blind, ohne Modellbewertung).
+# Erfasst mit: uv run streamlit run src/creative_agent/evaluation/label_app.py
+urteile:
+  t01:
+    urteil: passt
+    notiz: ''
+  t02:
+    urteil: passt
+    notiz: ''
+  t03:
+    urteil: passt_nicht
+    notiz: Wieso per ANC per Kabel?
+  t04:
+    urteil: passt
+    notiz: ''
+  t05:
+    urteil: passt
+    notiz: ''
+  t06:
+    urteil: passt
+    notiz: ''
+  t07:
+    urteil: passt
+    notiz: ''
+  t08:
+    urteil: passt
+    notiz: ''
+  t09:
+    urteil: passt
+    notiz: ''
+  t10:
+    urteil: passt
+    notiz: ''
+  t11:
+    urteil: passt_nicht
+    notiz: Passt nicht
+  t12:
+    urteil: passt
+    notiz: ''
+  t13:
+    urteil: passt
+    notiz: ''
+  t14:
+    urteil: passt
+    notiz: ''
+  t15:
+    urteil: passt
+    notiz: ''
+  t16:
+    urteil: passt
+    notiz: ''
+  t17:
+    urteil: passt
+    notiz: ''
+  t18:
+    urteil: passt
+    notiz: ''
+  t19:
+    urteil: passt_nicht
+    notiz: Dieser Satz hört sich komisch an.
+  t20:
+    urteil: passt
+    notiz: ''

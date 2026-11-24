@@ -16,7 +16,7 @@ from ..config import ROOT, Settings
 from ..skills import load_skills
 from .calibration import (
     CAL_DIR,
-    evaluate,
+    evaluate_with_variants,
     judge_texts,
     load_labels,
     load_model_scores,
@@ -35,7 +35,7 @@ def _negatives():
 def _calibration():
     labels, scores = load_labels(), load_model_scores()
     try:
-        return evaluate(scores, labels)
+        return evaluate_with_variants(scores, labels, Settings().judge_min_criterion)
     except ValueError:
         return None
 
@@ -68,14 +68,16 @@ def cmd_kalibrieren(args) -> int:
     from ..workflow.llm import AnthropicLLM
 
     judge = BrandVoiceJudge(
-        AnthropicLLM(settings.require_api_key()), settings.anthropic_model_judge
+        AnthropicLLM(settings.require_api_key()),
+        settings.anthropic_model_judge,
+        min_criterion=settings.judge_min_criterion,
     )
     asyncio.run(
         judge_texts(
             texts, fixture_products(), load_skills(ROOT / "skills"), judge, budget_usd=args.budget
         )
     )
-    result = evaluate(load_model_scores(), labels)
+    result = evaluate_with_variants(load_model_scores(), labels, settings.judge_min_criterion)
     (CAL_DIR / "ergebnis.json").write_text(result.model_dump_json(indent=2), encoding="utf-8")
     print(
         f"\n{'Schwelle':>8} {'Überein.':>9} {'Kappa':>6} {'falsch frei':>12} "
@@ -91,7 +93,17 @@ def cmd_kalibrieren(args) -> int:
         f"\nLeave-one-out-Übereinstimmung: {result.loo_agreement:.0%} · "
         f"Mensch «passt»: {result.human_pass}/{result.n}"
     )
-    print(f"Empfehlung: JUDGE_THRESHOLD={result.chosen.threshold} (in .env und .env.example)")
+    print("\nRegelvarianten (Sperre, wenn ein Kriterium ≤ Wert):")
+    for v in result.rule_variants:
+        c = v.chosen
+        print(
+            f"  ≤{v.min_criterion}: Schwelle {c.threshold}, Kappa {c.kappa}, "
+            f"Überein. {c.agreement:.0%}, LOO {v.loo_agreement:.0%}"
+        )
+    print(
+        f"Empfehlung für JUDGE_MIN_CRITERION={settings.judge_min_criterion}: "
+        f"JUDGE_THRESHOLD={result.chosen.threshold}"
+    )
     return 0
 
 

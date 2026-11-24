@@ -167,6 +167,12 @@ class ThresholdRow(BaseModel):
     false_block: int  # Modell «passt nicht», Mensch «passt»
 
 
+class RuleVariant(BaseModel):
+    min_criterion: int
+    chosen: ThresholdRow
+    loo_agreement: float
+
+
 class CalibrationResult(BaseModel):
     n: int
     human_pass: int
@@ -175,6 +181,7 @@ class CalibrationResult(BaseModel):
     chosen: ThresholdRow
     loo_agreement: float
     items: list[dict]
+    rule_variants: list[RuleVariant] = []
 
 
 def predict(score: ModelScore, threshold: float, min_criterion: int) -> bool:
@@ -208,7 +215,7 @@ def _choose(rows: list[ThresholdRow]) -> ThresholdRow:
 
 
 def evaluate(
-    scores: dict[str, ModelScore], labels: dict[str, dict], min_criterion: int = 2
+    scores: dict[str, ModelScore], labels: dict[str, dict], min_criterion: int = 0
 ) -> CalibrationResult:
     ids = sorted(set(scores) & set(labels))
     if len(ids) < 5:
@@ -241,3 +248,17 @@ def evaluate(
         loo_agreement=round(loo_hits / len(data), 3),
         items=items,
     )
+
+
+def evaluate_with_variants(
+    scores: dict[str, ModelScore], labels: dict[str, dict], min_criterion: int
+) -> CalibrationResult:
+    """Ergebnis für die konfigurierte Regel, plus Vergleich der Regelvarianten (Transparenz)."""
+    result = evaluate(scores, labels, min_criterion)
+    variants = []
+    for mc in (2, 1, 0):
+        r = evaluate(scores, labels, mc)
+        variants.append(
+            RuleVariant(min_criterion=mc, chosen=r.chosen, loo_agreement=r.loo_agreement)
+        )
+    return result.model_copy(update={"rule_variants": variants})

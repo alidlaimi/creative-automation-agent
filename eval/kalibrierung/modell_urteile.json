@@ -1,0 +1,382 @@
+{
+ "t01": {
+  "fingerprint": "567059e110fec8f6",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 3,
+   "zielgruppennah": 4,
+   "klar": 4
+  },
+  "mean": 3.75,
+  "reasons": {
+   "ehrlich": "«60 h Akku und ANC» steht so in den Produktdaten, und «machen den Morgen leiser» bleibt zurückhaltend, aber Grenzen wie «bis zu» bei der Akkulaufzeit oder der Hinweis auf schwitzigen Tragekomfort fehlen.",
+   "unkonventionell": "Der Einstieg «Vorlesung um acht, Zug um sieben» ist ein netter Situationsaufhänger, aber «leiser in den Tag» ist ein ziemlich austauschbarer Werbedreh ohne Selbstironie oder echte Überraschung.",
+   "zielgruppennah": "Die Studierendensituation mit Vorlesung und Zug am Morgen ist klar erkennbar, doch es fehlt die direkte Du-Ansprache.",
+   "klar": "Kurze Sätze mit einem Gedanke pro Satz, aber «60 h Akku und ANC» enthält Kürzel-Jargon, der nicht erklärt wird."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011808,
+  "judged_at": "2026-11-24T08:43:17.324127Z"
+ },
+ "t02": {
+  "fingerprint": "f61929b5648c884e",
+  "scores": {
+   "ehrlich": 3,
+   "unkonventionell": 1,
+   "zielgruppennah": 2,
+   "klar": 4
+  },
+  "mean": 2.5,
+  "reasons": {
+   "ehrlich": "ANC und 24 h Akku stehen in den Produktdaten und es wird nichts Falsches behauptet, aber «Musik neu erleben» ist ein vager Hype-Satz und Grenzen wie die App-Pflicht werden nicht erwähnt.",
+   "unkonventionell": "«Erlebe Musik neu» und «Für alle, die Musik lieben» sind austauschbare Werbesätze, die jeder Händler schreiben könnte, ohne eigenen Dreh oder Selbstironie.",
+   "zielgruppennah": "Die Du-Form («Erlebe») ist da, aber «für alle, die Musik lieben» richtet sich an niemand Bestimmten und zeigt keine Studierendensituation wie Bibliothek oder Pendeln.",
+   "klar": "Zwei kurze Sätze mit aktivem Verb sind sofort verständlich, nur «ANC» bleibt ohne Erklärung und der CTA «Ansehen» ist nichtssagend."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011818,
+  "judged_at": "2026-11-24T08:43:21.743874Z"
+ },
+ "t03": {
+  "fingerprint": "ee5c1f8c20c034e6",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 1,
+   "zielgruppennah": 1,
+   "klar": 2
+  },
+  "mean": 2.0,
+  "reasons": {
+   "ehrlich": "Der Text verspricht nur Geräuschreduktion per Kabel, was zu den Produktdaten (ANC, kabelgebunden) passt, bleibt aber vage und nennt keinen konkreten Nutzen oder Grenzen.",
+   "unkonventionell": "Der Satz «Die Implementierung aktiver Geräuschunterdrückung ermöglicht…» ist ein austauschbarer Technikbeschrieb ohne eigenen Dreh oder Selbstironie.",
+   "zielgruppennah": "Es gibt keine Du-Form und keinen Bezug zur Situation von Studierenden wie Lernen oder Bibliothek, der Text richtet sich an niemand Bestimmten.",
+   "klar": "Der Satz ist eine Substantivkette («Implementierung», «Reduktion von Umgebungsgeräuschen», «Kabelverbindung») mit Passiv-Charakter, und die Überschrift «ANC-Technologie» ist Fachjargon ohne Nutzen."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011692,
+  "judged_at": "2026-11-24T08:43:26.163630Z"
+ },
+ "t04": {
+  "fingerprint": "535e8061720b6cc2",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 3,
+   "zielgruppennah": 4,
+   "klar": 4
+  },
+  "mean": 3.75,
+  "reasons": {
+   "ehrlich": "«ANC dreht die Gespräche am Nebentisch leiser» ist eine realistische, nicht übertriebene Aussage, die zu den Daten (ANC) passt, nennt aber keine Grenzen.",
+   "unkonventionell": "Die Frage zur Prüfungsphase im Grossraum ist ein ordentlicher Einstieg, doch es fehlt ein eigener Dreh oder Selbstironie, die den Nutzen schärft.",
+   "zielgruppennah": "Prüfungsphase und Grossraum treffen die Situation von Studierenden klar, aber es gibt keine direkte Du-Ansprache.",
+   "klar": "Kurze, verständliche Sätze mit einem Gedanken pro Satz, nur das Kürzel «ANC» wird nicht erklärt."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011052,
+  "judged_at": "2026-11-24T08:43:29.911574Z"
+ },
+ "t05": {
+  "fingerprint": "38ee94057c4ba65a",
+  "scores": {
+   "ehrlich": 3,
+   "unkonventionell": 1,
+   "zielgruppennah": 2,
+   "klar": 4
+  },
+  "mean": 2.5,
+  "reasons": {
+   "ehrlich": "ANC und 60 h stehen in den Produktdaten, doch der Text nennt nur Vorteile und lässt Grenzen (z.B. schwitziger Tragekomfort, «bis zu» 60 h) weg, ohne zu übertreiben.",
+   "unkonventionell": "«Kopfhörer mit ANC und 60 h Akku. Ideal für Pendler und Studierende.» ist ein austauschbarer Werbesatz ohne eigenen Dreh oder Selbstironie.",
+   "zielgruppennah": "Studierende werden zwar genannt, aber nur als Etikett neben Pendlern; es gibt keine Du-Ansprache und keine konkrete Situation wie Bibliothek oder Prüfungsphase.",
+   "klar": "Zwei kurze, verständliche Sätze, aber «ANC» bleibt unerklärt und die Überschrift wiederholt den Primärtext fast wörtlich."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011626,
+  "judged_at": "2026-11-24T08:43:34.247957Z"
+ },
+ "t06": {
+  "fingerprint": "b555fa0184417ad2",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 4,
+   "zielgruppennah": 3,
+   "klar": 4
+  },
+  "mean": 3.75,
+  "reasons": {
+   "ehrlich": "Der Text verspricht nur Kabel und ANC, was mit den Produktdaten übereinstimmt, nennt aber keine Grenzen und der Nachteil des Kabels wird nur implizit zum Argument.",
+   "unkonventionell": "Der Dreh «Hier gibt es keine» macht den Nachteil Kabel zum Vorteil und ist leicht ironisch, wirkt aber noch etwas vorhersehbar.",
+   "zielgruppennah": "Die genervte Bluetooth-Situation ist erkennbar, aber es fehlt ein konkreter Studierendenbezug wie Vorlesung, Bibliothek oder Lernen und die Du-Form ist nur implizit.",
+   "klar": "Kurze Sätze und ein Gedanke pro Satz, einzig «Hier gibt es keine» ist leicht elliptisch und «Kabel rein, ANC an» wirkt etwas knapp."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011178,
+  "judged_at": "2026-11-24T08:43:38.997550Z"
+ },
+ "t07": {
+  "fingerprint": "beee844b4a7759af",
+  "scores": {
+   "ehrlich": 2,
+   "unkonventionell": 1,
+   "zielgruppennah": 1,
+   "klar": 3
+  },
+  "mean": 1.75,
+  "reasons": {
+   "ehrlich": "«Premium-Sound auf höchstem Niveau für höchste Ansprüche» und «Sound auf Topniveau» sind unbelegte Superlative, nur ANC und 60 h stehen in den Daten, und die Contra-Punkte wie schwitziger Tragekomfort oder der Sound «für casual Zwecke» werden nicht erwähnt.",
+   "unkonventionell": "Der Text besteht aus austauschbaren Werbefloskeln («Topniveau», «höchste Ansprüche»), die jeder Händler schreiben könnte, ohne eigenen Blickwinkel oder Selbstironie.",
+   "zielgruppennah": "Studierende und ihre Situation wie Lernen, Bibliothek oder Pendeln kommen nicht vor, und es gibt keine Du-Ansprache.",
+   "klar": "Der Text ist kurz und verständlich, aber der Primärtext doppelt «höchste» und «Niveau» redundant und der Gedanke bleibt vage."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011868,
+  "judged_at": "2026-11-24T08:43:43.277911Z"
+ },
+ "t08": {
+  "fingerprint": "c4721bf98732e11b",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 4,
+   "zielgruppennah": 3,
+   "klar": 4
+  },
+  "mean": 3.75,
+  "reasons": {
+   "ehrlich": "«ANC» und «24 h Akku» stehen in den Produktdaten, und «fühlt es sich so an» relativiert ehrlich, doch Grenzen wie die App-Pflicht oder das Fehlen eines Ladeadapters bleiben unerwähnt.",
+   "unkonventionell": "Der Dreh, dass Pendeln nicht kürzer wird, sich aber so anfühlt, ist überraschend und selbstironisch und führt zum Nutzen von ANC und Akku.",
+   "zielgruppennah": "Pendeln ist eine erkennbare Situation, aber es gibt keine Du-Ansprache und keinen spezifischen Bezug zu Studierenden wie Uni oder Lernen.",
+   "klar": "Kurze Sätze und ein Gedanke pro Satz, nur das Fachkürzel «ANC» wird nicht erklärt und «Gefühlt kürzer» ist als Überschrift knapp."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.01163,
+  "judged_at": "2026-11-24T08:43:47.608462Z"
+ },
+ "t09": {
+  "fingerprint": "9398bcba4e5b1545",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 1,
+   "zielgruppennah": 2,
+   "klar": 4
+  },
+  "mean": 2.75,
+  "reasons": {
+   "ehrlich": "«Guter Klang, ANC und Kabel» und «solider Kopfhörer» bleiben nah an den Produktdaten und übertreiben nicht, bleiben aber vage und ohne konkreten belegbaren Nutzen.",
+   "unkonventionell": "«Solider Begleiter» und «Ein solider Kopfhörer für den Alltag» sind austauschbare Werbesätze ohne eigenen Dreh oder Selbstironie.",
+   "zielgruppennah": "Die Studierenden werden weder mit Du angesprochen noch in einer erkennbaren Situation wie Lernen oder Pendeln abgeholt; «Alltag» ist generisch.",
+   "klar": "Kurze, verständliche Sätze ohne Verschachtelung, aber die Aufzählung «Guter Klang, ANC und Kabel» ist etwas stichwortartig und «ANC» wird nicht erklärt."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.01109,
+  "judged_at": "2026-11-24T08:43:51.502830Z"
+ },
+ "t10": {
+  "fingerprint": "e40324ebe7d2e57f",
+  "scores": {
+   "ehrlich": 3,
+   "unkonventionell": 3,
+   "zielgruppennah": 3,
+   "klar": 4
+  },
+  "mean": 3.25,
+  "reasons": {
+   "ehrlich": "«60 h Akku» und «ANC» stehen in den Produktdaten, aber «Endlich Ruhe» verspricht mehr, als ANC leisten kann (es dämpft Geräusche, blendet Telefonate nicht aus), und «bis zu» fehlt bei den 60 h.",
+   "unkonventionell": "Der Blickwinkel «Tschüss, Telefonate» hat einen eigenen Dreh, bleibt aber ein verbreitetes ANC-Argument ohne Selbstironie oder Überraschung.",
+   "zielgruppennah": "Die Pendelsituation ist erkennbar, doch es gibt keine direkte Du-Ansprache und nichts, das gezielt Studierende abholt.",
+   "klar": "Die Sätze sind kurz und verständlich, aber «60 h Akku, ANC.» ist eine knappe Aufzählung ohne Verb und «ANC» ist Fachjargon ohne Erklärung."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011974,
+  "judged_at": "2026-11-24T08:43:56.004822Z"
+ },
+ "t11": {
+  "fingerprint": "b5793ae38019245c",
+  "scores": {
+   "ehrlich": 3,
+   "unkonventionell": 1,
+   "zielgruppennah": 1,
+   "klar": 3
+  },
+  "mean": 2.0,
+  "reasons": {
+   "ehrlich": "ANC und 24 h Akku stehen in den Produktdaten und es gibt keine Übertreibung, aber die Aussage «grosse Auswahl» passt nicht zum einzelnen Produkt und Grenzen wie die App-Pflicht bleiben unerwähnt.",
+   "unkonventionell": "«Unser Sortiment bietet eine grosse Auswahl» und «Mehr erfahren» sind austauschbare Sätze, die jeder Händler schreiben könnte, ganz ohne eigenen Dreh oder Selbstironie.",
+   "zielgruppennah": "Der Text enthält weder Du-Form noch eine Situation von Studierenden wie Lernen oder Pendeln und richtet sich an niemand Bestimmten.",
+   "klar": "Die Sätze sind kurz und verständlich, doch der Gedanke springt vom Sortiment zum Einzelprodukt, und «ANC» wird ohne Nutzen als Kürzel genannt."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011676,
+  "judged_at": "2026-11-24T08:44:00.207984Z"
+ },
+ "t12": {
+  "fingerprint": "080a7e9791969485",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 4,
+   "zielgruppennah": 4,
+   "klar": 4
+  },
+  "mean": 4.0,
+  "reasons": {
+   "ehrlich": "«60 h Akku» und «ANC» stehen in den Produktdaten, der Wäsche-Vergleich ist harmlos, doch fehlt das «bis zu» der Beschreibung und Grenzen wie der schwitzige Tragekomfort werden nicht genannt.",
+   "unkonventionell": "Der Wäsche-Vergleich ist ein eigener, leicht ironischer Dreh, der die Akkulaufzeit greifbar macht, auch wenn «Dazu ANC für den Zug» eher konventionell bleibt.",
+   "zielgruppennah": "Du-Form, Wäsche und Zugfahrt treffen den Alltag von Studierenden, das Lernen oder die Prüfungsphase fehlt aber.",
+   "klar": "Kurze Sätze und aktive Verben, nur der Fragment-Satz «Dazu ANC für den Zug» und die knappe Überschrift «Laden? Selten.» sind etwas verkürzt."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.012026,
+  "judged_at": "2026-11-24T08:44:04.811913Z"
+ },
+ "t13": {
+  "fingerprint": "d47227c1c558607c",
+  "scores": {
+   "ehrlich": 2,
+   "unkonventionell": 2,
+   "zielgruppennah": 1,
+   "klar": 4
+  },
+  "mean": 2.25,
+  "reasons": {
+   "ehrlich": "«Sound, der dich packt. Bass, der dich trägt. Ruhe, die dich hält.» sind emotionale Versprechen ohne Beleg; «Bass» steht nicht in den Produktdaten, nur ANC und Kabel werden konkret genannt.",
+   "unkonventionell": "Die Dreier-Reihung mit «dich packt/trägt/hält» ist ein austauschbares Werbemuster ohne eigenen Dreh oder Selbstironie, und «Spür den Sound» ist generisch.",
+   "zielgruppennah": "Zwar Du-Form, aber keine erkennbare Situation von Studierenden (Lernen, Bibliothek, Pendeln); der Text könnte an jeden gerichtet sein.",
+   "klar": "Kurze Sätze mit einem Gedanken je Satz, nur das abschliessende «ANC per Kabel» ist knapp und für Laien kaum erklärt."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011302,
+  "judged_at": "2026-11-24T08:44:09.188999Z"
+ },
+ "t14": {
+  "fingerprint": "322b290eb3c16f5b",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 3,
+   "zielgruppennah": 4,
+   "klar": 3
+  },
+  "mean": 3.5,
+  "reasons": {
+   "ehrlich": "ANC, Kabel- und Kabellos-Betrieb sowie 24 h Akku stehen alle in den Produktdaten, es gibt keine Übertreibung, aber auch keine Grenzen wie die App-Pflicht oder die Verarbeitung werden genannt.",
+   "unkonventionell": "Der Kontrast «Bibliothek voll, Kopf ruhig» ist ein netter Dreh, danach folgt aber eine nüchterne Featureliste ohne Selbstironie oder echte Überraschung.",
+   "zielgruppennah": "Die Bibliothek und das Lernen sind für Studierende klar erkennbar und die Du-Form wird genutzt («dein Kopf»), die Ansprache bleibt aber knapp.",
+   "klar": "Der Einstieg ist kurz und klar, doch der zweite Teil ist eine Aufzählung in einem Satz mit Doppelpunkt, und «mit Kabel oder kabellos» ist etwas holprig."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011776,
+  "judged_at": "2026-11-24T08:44:13.753074Z"
+ },
+ "t15": {
+  "fingerprint": "0e38d46e28934127",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 1,
+   "zielgruppennah": 1,
+   "klar": 3
+  },
+  "mean": 2.25,
+  "reasons": {
+   "ehrlich": "Alle Angaben (ANC, 60 h, kabelgebunden und kabellos) stehen in den Produktdaten und es gibt keine Übertreibung, aber Grenzen wie die unpraktische Touch-Bedienung oder «bis zu» bei der Akkulaufzeit bleiben unerwähnt.",
+   "unkonventionell": "Der Text ist eine nüchterne Eigenschaftsliste ohne Blickwinkel oder Selbstironie, die jeder Händler so schreiben könnte.",
+   "zielgruppennah": "Studierende werden weder in Du-Form noch in einer Situation wie Bibliothek, Lernen oder Pendeln angesprochen.",
+   "klar": "Der Satz ist kurz und verständlich, besteht aber aus einer Aufzählung ohne Verben und Nutzen, und die Überschrift wiederholt nur den Produktnamen."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.01138,
+  "judged_at": "2026-11-24T08:44:17.878102Z"
+ },
+ "t16": {
+  "fingerprint": "80b2f116e02dda83",
+  "scores": {
+   "ehrlich": 3,
+   "unkonventionell": 1,
+   "zielgruppennah": 2,
+   "klar": 4
+  },
+  "mean": 2.5,
+  "reasons": {
+   "ehrlich": "«geniesse deine Musik überall, wo du willst» ist ein vages, leicht überzogenes Versprechen ohne konkrete Zahl (24 h) oder Nutzen und verschweigt Grenzen, ist aber nicht grob übertrieben.",
+   "unkonventionell": "«Hol dir jetzt die QuietComfort» und «Jetzt holen» sind austauschbare Händlerphrasen ohne eigenen Dreh oder Selbstironie.",
+   "zielgruppennah": "Die Du-Form ist vorhanden, aber Studierende und ihre Situation (Bibliothek, Lernen, Pendeln) kommen im Text nirgends vor.",
+   "klar": "Der Text ist kurz und verständlich mit aktiven Verben, wirkt aber redundant mit dreimal Kaufaufforderung und enthält Druck durch «jetzt»."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.01157,
+  "judged_at": "2026-11-24T08:44:22.272870Z"
+ },
+ "t17": {
+  "fingerprint": "d71c4ad072f45ed9",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 3,
+   "zielgruppennah": 2,
+   "klar": 5
+  },
+  "mean": 3.5,
+  "reasons": {
+   "ehrlich": "«ANC per Kabel, für CHF 99.–» entspricht den Produktdaten und der Text übertreibt nicht, nennt aber keine Grenzen und «kein Akku» wird nicht ganz sauber eingeordnet (ANC ohne Akku ist unklar belegt).",
+   "unkonventionell": "Der Dreh «kein Akku, kein Laden, kein Drama» macht den Kabel-Nachteil zum Argument, wirkt aber als Reihung etwas vertraut und die Überschrift «Ohne Akku ruhig» ist eher flach.",
+   "zielgruppennah": "Der Text enthält keine erkennbare Studierenden-Situation wie Bibliothek, Lernen oder Pendeln und spricht das Du nicht direkt an.",
+   "klar": "Kurze, aktive Satzfragmente mit je einem Gedanken und ohne Substantivketten sind sofort verständlich."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.01121,
+  "judged_at": "2026-11-24T08:44:26.536492Z"
+ },
+ "t18": {
+  "fingerprint": "72f747cfd955a760",
+  "scores": {
+   "ehrlich": 3,
+   "unkonventionell": 1,
+   "zielgruppennah": 1,
+   "klar": 3
+  },
+  "mean": 2.0,
+  "reasons": {
+   "ehrlich": "ANC und 60 h stimmen mit den Produktdaten überein, doch «Wert auf Qualität» ist eine leere Behauptung und «bis zu» fehlt bei den 60 h; Grenzen wie der schwitzige Tragekomfort werden nicht erwähnt.",
+   "unkonventionell": "«Qualität von Sennheiser» und «Für Menschen, die Wert auf Qualität legen» ist ein austauschbarer Werbesatz ohne eigenen Blickwinkel oder Selbstironie.",
+   "zielgruppennah": "Der Text richtet sich an «Menschen» im Allgemeinen, ohne Du-Form und ohne Bezug zur Situation von Studierenden (Bibliothek, Pendeln, Lernen).",
+   "klar": "Die Sätze sind kurz und verständlich, aber die Aussage ist vage, und die Überschrift wiederholt nur das Wort Qualität aus dem Primärtext."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.011756,
+  "judged_at": "2026-11-24T08:44:30.842537Z"
+ },
+ "t19": {
+  "fingerprint": "fd716079d94e7486",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 2,
+   "zielgruppennah": 2,
+   "klar": 4
+  },
+  "mean": 3.0,
+  "reasons": {
+   "ehrlich": "ANC und 24 h Akku stehen in den Produktdaten, nichts ist übertrieben, aber Grenzen (z.B. App-Zwang) bleiben unerwähnt und der Nutzen ist dünn.",
+   "unkonventionell": "Die tautologische Pointe «Das sind Kopfhörer» wirkt zwar leicht ironisch, schärft aber keinen Produktnutzen und bleibt austauschbar.",
+   "zielgruppennah": "Die Du-Form ist da, doch es fehlt jeder Bezug zur Lebenswelt von Studierenden wie Lernen, Bibliothek oder Pendeln.",
+   "klar": "Kurze, verständliche Sätze mit einem Gedanken je Satz, nur der Einstieg «Wenn du Kopfhörer brauchst, sind das Kopfhörer» ist inhaltsleer."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.0113,
+  "judged_at": "2026-11-24T08:44:34.550905Z"
+ },
+ "t20": {
+  "fingerprint": "2ff5c261fcb8fa3a",
+  "scores": {
+   "ehrlich": 4,
+   "unkonventionell": 2,
+   "zielgruppennah": 3,
+   "klar": 4
+  },
+  "mean": 3.25,
+  "reasons": {
+   "ehrlich": "Sterne, Anzahl Bewertungen und 60 h Akku mit ANC stehen alle in den Produktdaten, aber «60 h» ist laut Beschreibung ein «bis zu»-Wert, und die Contra-Punkte (Tragekomfort, Touch-Bedienung) bleiben unerwähnt.",
+   "unkonventionell": "Die Überschrift «843 Meinungen» und die Sterne-Aussage sind ein gängiger Social-Proof-Satz, den jeder Händler schreiben könnte, ohne eigenen Dreh oder Selbstironie.",
+   "zielgruppennah": "«Dein Pendelweg» ist eine erkennbare Situation in Du-Form, doch der Text bleibt für Studierende generisch und nennt weder Uni noch Lernen.",
+   "klar": "Die Sätze sind kurz und verständlich, aber der zweite Satz mit «Und» und «mit ANC» wirkt angehängt, und «ANC» ist ohne Erklärung Fachjargon."
+  },
+  "model": "claude-sonnet-5-5",
+  "cost_usd": 0.01188,
+  "judged_at": "2026-11-24T08:44:39.150585Z"
+ }
+}

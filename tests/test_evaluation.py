@@ -186,3 +186,15 @@ def test_report_compares_with_previous(eval_run):
     report_mod.write_report(index.model_copy(update={"eval_id": "20261101-0900"}), negatives, None)
     text = report_mod.write_report(index, negatives, None).read_text("utf-8")
     assert "## Vergleich zum letzten Bericht" in text and "20261101-0900" in text
+
+
+def test_rule_variants_are_reported():
+    from creative_agent.evaluation.calibration import evaluate_with_variants
+
+    means = [4.5, 4.0, 3.75, 3.0, 2.5, 2.0]
+    scores = {f"t{i}": score(m) for i, m in enumerate(means)}
+    labels = {
+        f"t{i}": {"urteil": "passt" if m >= 3.75 else "passt_nicht"} for i, m in enumerate(means)
+    }
+    r = evaluate_with_variants(scores, labels, 0)
+    assert [v.min_criterion for v in r.rule_variants] == [2, 1, 0] and r.min_criterion == 0

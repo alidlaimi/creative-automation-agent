@@ -73,10 +73,16 @@ async def run_gate(
                         rule="markenstimme_bewertung",
                         severity="gelb",
                         message=f"Markenstimme unter Schwellwert (Mittel {judge_result.mean} < "
-                        f"{judge_result.threshold} oder ein Kriterium ≤ {judge.min_criterion}): "
+                        f"{judge_result.threshold}"
+                        + (
+                            f" oder ein Kriterium ≤ {judge.min_criterion}"
+                            if judge.min_criterion
+                            else ""
+                        )
+                        + "): "
                         f"{', '.join(weak)} – {judge_result.overall}",
-                        source=f"markenstimme {skills['markenstimme'].version} (vorläufig, "
-                        "nicht kalibriert)",
+                        source=f"markenstimme {skills['markenstimme'].version} (kalibriert, "
+                        "nur Hinweis – siehe eval/kalibrierung)",
                     )
                 )
 

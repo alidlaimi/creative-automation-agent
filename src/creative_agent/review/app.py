@@ -231,6 +231,7 @@ for original in record.variants:
                             AnthropicLLM(settings.require_api_key()),
                             settings.anthropic_model_judge,
                             threshold=settings.judge_threshold,
+                            min_criterion=settings.judge_min_criterion,
                         )
                     with st.spinner("Rendern und prüfen …"):
                         rev = asyncio.run(

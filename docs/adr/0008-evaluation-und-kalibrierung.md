@@ -46,3 +46,25 @@ wie sie mit menschlichem Urteil übereinstimmt.
   statistisch belastbare Werte. Für den Betrieb würde man das Testset aus echten Kampagnen erweitern und
   mehrere Personen beschriften lassen (Übereinstimmung zwischen Menschen als Obergrenze).
 - Kalibriert ist an einer Person (Ali) und an einer eigenen Ableitung der Markenstimme.
+
+## Ergebnis der ersten Kalibrierung (2026-11-24)
+20 Texte, 17 von Hand «passt», 3 «passt nicht». Modell: Sonnet 5.5, markenstimme 1.0.1. Kosten USD 0.23.
+
+| Regel | beste Schwelle | Übereinstimmung | Kappa | LOO |
+|---|---|---|---|---|
+| Sperre, wenn ein Kriterium ≤ 2 (ursprünglich) | 3.25 | 50 % | 0.17 | 45 % |
+| Sperre, wenn ein Kriterium ≤ 1 | 3.25 | 60 % | 0.25 | 60 % |
+| keine Kriterium-Sperre | **2.25** | **85 %** | **0.48** | **85 %** |
+
+**Befund:** Mit der ursprünglichen Regel urteilt das Modell viel strenger als der Mensch: Es sperrt
+10 Texte, die der Mensch freigeben würde – fast immer, weil «unkonventionell» mit 1 bewertet wurde.
+Der Mensch beurteilt «Würde ich das freigeben?», die Rubrik misst «Wie stark ist der eigene Dreh?».
+Das Modell hat dabei nie einen Text durchgelassen, den der Mensch ablehnt.
+
+**Entscheid:** keine Kriterium-Sperre, Schwelle 2.25 (`JUDGE_MIN_CRITERION=0`, `JUDGE_THRESHOLD=2.25`).
+Die Bewertung wirkt damit als Erkennung klar schwacher Texte; sie bleibt höchstens gelb.
+
+**Vorbehalt:** Die Regel wurde nach Ansicht der Daten gewählt. Leave-one-out deckt nur die Wahl der
+Schwelle ab, nicht die Wahl der Regel – die 85 % sind daher eher optimistisch. Mit nur 3 Ablehnungen ist
+Kappa instabil. Nächster Schritt: neue, nicht verwendete Texte beschriften und die Regel daran prüfen,
+idealerweise mit einer zweiten Person aus dem Kreativ-Team.

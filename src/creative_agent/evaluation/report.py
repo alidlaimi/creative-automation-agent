@@ -176,6 +176,20 @@ def build_report(
             f"{r.false_block} |"
             for r in c.rows
         ]
+        if c.rule_variants:
+            lines += [
+                "",
+                "Vergleich der Entscheidungsregel (Sperre, wenn ein Kriterium ≤ Wert):",
+                "",
+                "| Regel | beste Schwelle | Übereinstimmung | Kappa | LOO |",
+                "|---|---|---|---|---|",
+            ]
+            lines += [
+                f"| ≤ {v.min_criterion}{' (aus)' if v.min_criterion == 0 else ''} | "
+                f"{v.chosen.threshold} | {_pct(v.chosen.agreement)} | {v.chosen.kappa} | "
+                f"{_pct(v.loo_agreement)} |"
+                for v in c.rule_variants
+            ]
         disagree = [i for i in c.items if (i["mensch"] == "passt") != i["modell_passt"]]
         if disagree:
             lines += ["", "Abweichungen (Mensch ≠ Modell bei gewählter Schwelle):", ""]

@@ -49,7 +49,7 @@ def judge_system(skill: Skill) -> str:
 
 
 class BrandVoiceJudge:
-    def __init__(self, llm: LLM, model: str, threshold: float = 3.5, min_criterion: int = 2):
+    def __init__(self, llm: LLM, model: str, threshold: float = 2.25, min_criterion: int = 0):
         self.llm = llm
         self.model = model
         self.threshold = threshold

@@ -43,6 +43,7 @@ async def gate_run(record: RunRecord, use_judge: bool) -> list[dict]:
             AnthropicLLM(settings.require_api_key()),
             settings.anthropic_model_judge,
             threshold=settings.judge_threshold,
+            min_criterion=settings.judge_min_criterion,
         )
     reports = load_layout_reports(RUNS / record.run_id)
     results = []

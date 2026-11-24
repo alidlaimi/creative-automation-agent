@@ -304,7 +304,12 @@ def test_judge_pass_keeps_green():
 
 
 def test_judge_below_threshold_is_only_yellow():
-    judge = BrandVoiceJudge(ScriptedLLM(structured=[_scores(3, 2, 3, 4)]), "claude-sonnet-5-5")
+    judge = BrandVoiceJudge(
+        ScriptedLLM(structured=[_scores(3, 2, 3, 4)]),
+        "claude-sonnet-5-5",
+        threshold=3.5,
+        min_criterion=2,
+    )
     result = gate(feed(), judge=judge)
     assert result.status == "gelb" and "markenstimme_bewertung" in rules_of(result, "gelb")
 

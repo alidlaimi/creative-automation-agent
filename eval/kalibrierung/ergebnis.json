@@ -1,0 +1,389 @@
+{
+  "n": 20,
+  "human_pass": 17,
+  "min_criterion": 0,
+  "rows": [
+    {
+      "threshold": 2.0,
+      "agreement": 0.8,
+      "kappa": -0.081,
+      "false_pass": 3,
+      "false_block": 1
+    },
+    {
+      "threshold": 2.25,
+      "agreement": 0.85,
+      "kappa": 0.483,
+      "false_pass": 1,
+      "false_block": 2
+    },
+    {
+      "threshold": 2.5,
+      "agreement": 0.75,
+      "kappa": 0.306,
+      "false_pass": 1,
+      "false_block": 4
+    },
+    {
+      "threshold": 2.75,
+      "agreement": 0.6,
+      "kappa": 0.14,
+      "false_pass": 1,
+      "false_block": 7
+    },
+    {
+      "threshold": 3.0,
+      "agreement": 0.55,
+      "kappa": 0.1,
+      "false_pass": 1,
+      "false_block": 8
+    },
+    {
+      "threshold": 3.25,
+      "agreement": 0.6,
+      "kappa": 0.252,
+      "false_pass": 0,
+      "false_block": 8
+    },
+    {
+      "threshold": 3.5,
+      "agreement": 0.5,
+      "kappa": 0.174,
+      "false_pass": 0,
+      "false_block": 10
+    },
+    {
+      "threshold": 3.75,
+      "agreement": 0.4,
+      "kappa": 0.111,
+      "false_pass": 0,
+      "false_block": 12
+    },
+    {
+      "threshold": 4.0,
+      "agreement": 0.2,
+      "kappa": 0.018,
+      "false_pass": 0,
+      "false_block": 16
+    },
+    {
+      "threshold": 4.25,
+      "agreement": 0.15,
+      "kappa": -0.0,
+      "false_pass": 0,
+      "false_block": 17
+    },
+    {
+      "threshold": 4.5,
+      "agreement": 0.15,
+      "kappa": -0.0,
+      "false_pass": 0,
+      "false_block": 17
+    }
+  ],
+  "chosen": {
+    "threshold": 2.25,
+    "agreement": 0.85,
+    "kappa": 0.483,
+    "false_pass": 1,
+    "false_block": 2
+  },
+  "loo_agreement": 0.85,
+  "items": [
+    {
+      "id": "t01",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 3.75,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 3,
+        "zielgruppennah": 4,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t02",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 2.5,
+      "modell_punkte": {
+        "ehrlich": 3,
+        "unkonventionell": 1,
+        "zielgruppennah": 2,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t03",
+      "mensch": "passt_nicht",
+      "notiz": "Wieso per ANC per Kabel?",
+      "modell_mittel": 2.0,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 1,
+        "zielgruppennah": 1,
+        "klar": 2
+      },
+      "modell_passt": false
+    },
+    {
+      "id": "t04",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 3.75,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 3,
+        "zielgruppennah": 4,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t05",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 2.5,
+      "modell_punkte": {
+        "ehrlich": 3,
+        "unkonventionell": 1,
+        "zielgruppennah": 2,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t06",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 3.75,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 4,
+        "zielgruppennah": 3,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t07",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 1.75,
+      "modell_punkte": {
+        "ehrlich": 2,
+        "unkonventionell": 1,
+        "zielgruppennah": 1,
+        "klar": 3
+      },
+      "modell_passt": false
+    },
+    {
+      "id": "t08",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 3.75,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 4,
+        "zielgruppennah": 3,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t09",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 2.75,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 1,
+        "zielgruppennah": 2,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t10",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 3.25,
+      "modell_punkte": {
+        "ehrlich": 3,
+        "unkonventionell": 3,
+        "zielgruppennah": 3,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t11",
+      "mensch": "passt_nicht",
+      "notiz": "Passt nicht",
+      "modell_mittel": 2.0,
+      "modell_punkte": {
+        "ehrlich": 3,
+        "unkonventionell": 1,
+        "zielgruppennah": 1,
+        "klar": 3
+      },
+      "modell_passt": false
+    },
+    {
+      "id": "t12",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 4.0,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 4,
+        "zielgruppennah": 4,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t13",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 2.25,
+      "modell_punkte": {
+        "ehrlich": 2,
+        "unkonventionell": 2,
+        "zielgruppennah": 1,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t14",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 3.5,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 3,
+        "zielgruppennah": 4,
+        "klar": 3
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t15",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 2.25,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 1,
+        "zielgruppennah": 1,
+        "klar": 3
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t16",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 2.5,
+      "modell_punkte": {
+        "ehrlich": 3,
+        "unkonventionell": 1,
+        "zielgruppennah": 2,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t17",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 3.5,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 3,
+        "zielgruppennah": 2,
+        "klar": 5
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t18",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 2.0,
+      "modell_punkte": {
+        "ehrlich": 3,
+        "unkonventionell": 1,
+        "zielgruppennah": 1,
+        "klar": 3
+      },
+      "modell_passt": false
+    },
+    {
+      "id": "t19",
+      "mensch": "passt_nicht",
+      "notiz": "Dieser Satz hört sich komisch an.",
+      "modell_mittel": 3.0,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 2,
+        "zielgruppennah": 2,
+        "klar": 4
+      },
+      "modell_passt": true
+    },
+    {
+      "id": "t20",
+      "mensch": "passt",
+      "notiz": "",
+      "modell_mittel": 3.25,
+      "modell_punkte": {
+        "ehrlich": 4,
+        "unkonventionell": 2,
+        "zielgruppennah": 3,
+        "klar": 4
+      },
+      "modell_passt": true
+    }
+  ],
+  "rule_variants": [
+    {
+      "min_criterion": 2,
+      "chosen": {
+        "threshold": 3.25,
+        "agreement": 0.5,
+        "kappa": 0.174,
+        "false_pass": 0,
+        "false_block": 10
+      },
+      "loo_agreement": 0.45
+    },
+    {
+      "min_criterion": 1,
+      "chosen": {
+        "threshold": 3.25,
+        "agreement": 0.6,
+        "kappa": 0.252,
+        "false_pass": 0,
+        "false_block": 8
+      },
+      "loo_agreement": 0.6
+    },
+    {
+      "min_criterion": 0,
+      "chosen": {
+        "threshold": 2.25,
+        "agreement": 0.85,
+        "kappa": 0.483,
+        "false_pass": 1,
+        "false_block": 2
+      },
+      "loo_agreement": 0.85
+    }
+  ]
+}
