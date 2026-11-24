@@ -20,6 +20,10 @@ COPY pyproject.toml uv.lock .python-version README.md ./
 RUN uv sync --frozen --no-dev --no-install-project
 # Diagnose: welche Python-Umgebung wird genutzt? Bricht klar ab, falls Playwright fehlt
 RUN /app/.venv/bin/python -c "import sys, playwright; print(sys.executable, playwright.__file__)"
+# Der mitgelieferte Node-Treiber von Playwright braucht libatomic1, bevor er die übrigen
+# Systembibliotheken selbst installieren kann (fehlt im slim-Image)
+RUN apt-get update && apt-get install -y --no-install-recommends libatomic1 \
+    && rm -rf /var/lib/apt/lists/*
 RUN /app/.venv/bin/python -m playwright install --with-deps chromium
 
 COPY src ./src
