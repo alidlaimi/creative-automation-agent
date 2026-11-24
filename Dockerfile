@@ -1,7 +1,8 @@
 # Review-Oberfläche inkl. Pipeline (Playwright/Chromium für das Rendering).
 # Bauen:   docker build -t creative-automation-agent .
 # Starten: docker run --rm -p 127.0.0.1:8501:8501 --env-file .env creative-automation-agent
-FROM python:3.12-slim
+# bookworm (Debian 12): von Playwright offiziell unterstützt; «slim» ohne Zusatz ist inzwischen Debian 13
+FROM python:3.12-slim-bookworm
 
 COPY --from=ghcr.io/astral-sh/uv:0.13.9 /uv /uvx /bin/
 
@@ -17,7 +18,9 @@ WORKDIR /app
 # Erst nur die Abhängigkeiten (gut gecacht), dann der Code
 COPY pyproject.toml uv.lock .python-version README.md ./
 RUN uv sync --frozen --no-dev --no-install-project
-RUN playwright install --with-deps chromium
+# Diagnose: welche Python-Umgebung wird genutzt? Bricht klar ab, falls Playwright fehlt
+RUN /app/.venv/bin/python -c "import sys, playwright; print(sys.executable, playwright.__file__)"
+RUN /app/.venv/bin/python -m playwright install --with-deps chromium
 
 COPY src ./src
 COPY skills ./skills
